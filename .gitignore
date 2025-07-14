@@ -1,0 +1,30 @@
+## Visual Studio
+.vs/
+*.user
+*.suo
+
+## Build Results
+bin/
+obj/
+out/
+TestResults/
+
+## ASP.NET
+wwwroot/*.db
+wwwroot/*.log
+
+## .NET Core
+project.lock.json
+project.fragment.lock.json
+artifacts/
+
+## Logs
+*.log
+
+## User-specific files
+*.swp
+*.sln.docstates
+
+## Others
+*.DS_Store
+*.vscode/
