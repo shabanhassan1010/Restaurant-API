@@ -1,0 +1,15 @@
+D:\programing\Projects\Resturant Api Project\RestaurantWebsite\Restaurant.Application\bin\Debug\net8.0\Restaurant.Application.deps.json
+D:\programing\Projects\Resturant Api Project\RestaurantWebsite\Restaurant.Application\bin\Debug\net8.0\Restaurant.Application.dll
+D:\programing\Projects\Resturant Api Project\RestaurantWebsite\Restaurant.Application\bin\Debug\net8.0\Restaurant.Application.pdb
+D:\programing\Projects\Resturant Api Project\RestaurantWebsite\Restaurant.Application\bin\Debug\net8.0\Restaurant.Domain.dll
+D:\programing\Projects\Resturant Api Project\RestaurantWebsite\Restaurant.Application\bin\Debug\net8.0\Restaurant.Domain.pdb
+D:\programing\Projects\Resturant Api Project\RestaurantWebsite\Restaurant.Application\obj\Debug\net8.0\Restaurant.Application.csproj.AssemblyReference.cache
+D:\programing\Projects\Resturant Api Project\RestaurantWebsite\Restaurant.Application\obj\Debug\net8.0\Restaurant.Application.GeneratedMSBuildEditorConfig.editorconfig
+D:\programing\Projects\Resturant Api Project\RestaurantWebsite\Restaurant.Application\obj\Debug\net8.0\Restaurant.Application.AssemblyInfoInputs.cache
+D:\programing\Projects\Resturant Api Project\RestaurantWebsite\Restaurant.Application\obj\Debug\net8.0\Restaurant.Application.AssemblyInfo.cs
+D:\programing\Projects\Resturant Api Project\RestaurantWebsite\Restaurant.Application\obj\Debug\net8.0\Restaurant.Application.csproj.CoreCompileInputs.cache
+D:\programing\Projects\Resturant Api Project\RestaurantWebsite\Restaurant.Application\obj\Debug\net8.0\Restaura.8ED4ADA1.Up2Date
+D:\programing\Projects\Resturant Api Project\RestaurantWebsite\Restaurant.Application\obj\Debug\net8.0\Restaurant.Application.dll
+D:\programing\Projects\Resturant Api Project\RestaurantWebsite\Restaurant.Application\obj\Debug\net8.0\refint\Restaurant.Application.dll
+D:\programing\Projects\Resturant Api Project\RestaurantWebsite\Restaurant.Application\obj\Debug\net8.0\Restaurant.Application.pdb
+D:\programing\Projects\Resturant Api Project\RestaurantWebsite\Restaurant.Application\obj\Debug\net8.0\ref\Restaurant.Application.dll

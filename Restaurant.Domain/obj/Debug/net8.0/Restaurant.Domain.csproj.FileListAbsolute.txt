@@ -1,0 +1,11 @@
+D:\programing\Projects\Resturant Api Project\RestaurantWebsite\Restaurant.Domain\bin\Debug\net8.0\Restaurant.Domain.deps.json
+D:\programing\Projects\Resturant Api Project\RestaurantWebsite\Restaurant.Domain\bin\Debug\net8.0\Restaurant.Domain.dll
+D:\programing\Projects\Resturant Api Project\RestaurantWebsite\Restaurant.Domain\bin\Debug\net8.0\Restaurant.Domain.pdb
+D:\programing\Projects\Resturant Api Project\RestaurantWebsite\Restaurant.Domain\obj\Debug\net8.0\Restaurant.Domain.GeneratedMSBuildEditorConfig.editorconfig
+D:\programing\Projects\Resturant Api Project\RestaurantWebsite\Restaurant.Domain\obj\Debug\net8.0\Restaurant.Domain.AssemblyInfoInputs.cache
+D:\programing\Projects\Resturant Api Project\RestaurantWebsite\Restaurant.Domain\obj\Debug\net8.0\Restaurant.Domain.AssemblyInfo.cs
+D:\programing\Projects\Resturant Api Project\RestaurantWebsite\Restaurant.Domain\obj\Debug\net8.0\Restaurant.Domain.csproj.CoreCompileInputs.cache
+D:\programing\Projects\Resturant Api Project\RestaurantWebsite\Restaurant.Domain\obj\Debug\net8.0\Restaurant.Domain.dll
+D:\programing\Projects\Resturant Api Project\RestaurantWebsite\Restaurant.Domain\obj\Debug\net8.0\refint\Restaurant.Domain.dll
+D:\programing\Projects\Resturant Api Project\RestaurantWebsite\Restaurant.Domain\obj\Debug\net8.0\Restaurant.Domain.pdb
+D:\programing\Projects\Resturant Api Project\RestaurantWebsite\Restaurant.Domain\obj\Debug\net8.0\ref\Restaurant.Domain.dll
