@@ -1,10 +1,9 @@
 ﻿using Restaurant.Domain.Entities;
 
-namespace Restaurant.Application.DTOS.Restaurant.Read
+namespace Restaurant.Application.DTOS.Restaurant.Write
 {
-    public class GetResturantDto
+    public class CreateResturanctDto
     {
-        public int Id { get; set; }
         public string Name { get; set; }
         public string Description { get; set; }
         public string Category { get; set; }

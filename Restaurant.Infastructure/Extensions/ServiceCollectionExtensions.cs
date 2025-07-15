@@ -18,6 +18,7 @@ namespace Restaurant.Infastructure.Extensions
             });
 
             services.AddScoped<IResturantRepository, ResturantRepository>();
+            services.AddScoped<IUnitOfWork, UnitOfWork>();
         }
     }
 }

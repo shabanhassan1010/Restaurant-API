@@ -1,9 +1,6 @@
 #region
-using Restaurant.Application.IService;
-using Restaurant.Application.Service;
-using Restaurant.Domain.IRepository;
-using Restaurant.Infastructure.Data.RepoImplementations;
 using Restaurant.Infastructure.Extensions;
+using Restaurant.Application.ServicesExtensions;
 #endregion
 
 
@@ -16,8 +13,7 @@ builder.Services.AddInfastructure(builder.Configuration);
 #endregion
 
 #region Service Registeration
-builder.Services.AddScoped<IResturantService, ResturantService>();
-builder.Services.AddScoped<IUnitOfWork, UnitOfWork>();
+builder.Services.AddApplication();
 #endregion
 
 builder.Services.AddControllers();

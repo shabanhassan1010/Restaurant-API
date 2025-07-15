@@ -15,3 +15,4 @@ D:\programing\Projects\Resturant Api Project\RestaurantWebsite\Restaurant.Infast
 D:\programing\Projects\Resturant Api Project\RestaurantWebsite\Restaurant.Infastructure\obj\Debug\net8.0\Restaurant.Infastructure.pdb
 D:\programing\Projects\Resturant Api Project\RestaurantWebsite\Restaurant.Infastructure\obj\Debug\net8.0\Restaurant.Infastructure.genruntimeconfig.cache
 D:\programing\Projects\Resturant Api Project\RestaurantWebsite\Restaurant.Infastructure\obj\Debug\net8.0\ref\Restaurant.Infastructure.dll
+D:\programing\Projects\Resturant Api Project\RestaurantWebsite\Restaurant.Infastructure\obj\Debug\net8.0\Restaurant.Infastructure.sourcelink.json
