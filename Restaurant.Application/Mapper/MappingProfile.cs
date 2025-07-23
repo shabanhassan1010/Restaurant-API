@@ -1,7 +1,7 @@
 ﻿using AutoMapper;
-using Restaurant.Application.DTOS.Restaurant.Read;
-using Restaurant.Application.DTOS.Restaurant.Update;
-using Restaurant.Application.DTOS.Restaurant.Write;
+using Restaurant.Application.Restaurants.Commands.CreateResturant;
+using Restaurant.Application.Restaurants.DTOS.Restaurant.Read;
+using Restaurant.Application.Restaurants.DTOS.Restaurant.Update;
 using Restaurant.Domain.Entities;
 
 namespace Restaurant.Application.Mapper
@@ -19,7 +19,7 @@ namespace Restaurant.Application.Mapper
                     PostalCode = src.Address.PostalCode,
                 }));
 
-            CreateMap<CreateResturanctDto, Restaurantt>()
+            CreateMap<CreateResturantCommand, Restaurantt>()
                 .ForMember(d=>d.Address , opt=>opt.MapFrom(src=> new Address
                 {
                     Street = src.Address.Street,

@@ -1,18 +1,20 @@
 ﻿using FluentValidation;
 using FluentValidation.AspNetCore;
 using Microsoft.Extensions.DependencyInjection;
-using Restaurant.Application.IService;
-using Restaurant.Application.Service;
+using Restaurant.Application.RestaurantService.IService;
+using Restaurant.Application.RestaurantService.Service;
 
-namespace Restaurant.Application.ServicesExtensions
+namespace Restaurant.Application.RestaurantService.ServicesExtensions
 {
     public static class ServiceCollectionExtensions
     {
         public static void AddApplication(this IServiceCollection services)
         {
-            var assembly = typeof(ResturantService).Assembly;
+            var assembly = typeof(ServiceCollectionExtensions).Assembly;
 
             services.AddScoped<IResturantService, ResturantService>();
+            services.AddMediatR(cfg => cfg.RegisterServicesFromAssembly(assembly));
+
             services.AddAutoMapper(assembly);
             services.AddValidatorsFromAssembly(assembly).AddFluentValidationAutoValidation();
         } 

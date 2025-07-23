@@ -2,15 +2,14 @@
 using AutoMapper;
 using Microsoft.Extensions.Logging;
 using Restaurant.Application.CustomeResponse;
-using Restaurant.Application.DTOS.Restaurant.Read;
-using Restaurant.Application.DTOS.Restaurant.Update;
-using Restaurant.Application.DTOS.Restaurant.Write;
-using Restaurant.Application.IService;
+using Restaurant.Application.Restaurants.DTOS.Restaurant.Read;
+using Restaurant.Application.Restaurants.DTOS.Restaurant.Update;
+using Restaurant.Application.RestaurantService.IService;
 using Restaurant.Domain.Entities;
 using Restaurant.Domain.IRepository;
 #endregion
 
-namespace Restaurant.Application.Service
+namespace Restaurant.Application.RestaurantService.Service
 {
     internal class ResturantService : IResturantService
     {
@@ -26,26 +25,6 @@ namespace Restaurant.Application.Service
             this.mapper = mapper;
         }
         #endregion
-        public async Task<IEnumerable<GetResturantDto>> GetAllRestaurants()
-        {
-            logger.LogInformation("Get All Restaurants");
-            var restaurants = await unitOfWork.resturantRepository.GetAllAsync();
-
-            var dto = mapper.Map<IEnumerable<GetResturantDto>>(restaurants);
-
-            return dto;
-        }
-        public async Task<GetResturantDto> GetResturantById(int id)
-        {
-            logger.LogInformation($"Get Resturant {id}");
-            var restaurant = await unitOfWork.resturantRepository.GetByIdAsync(id);
-            if (restaurant == null)
-                return null;
-
-            var dto = mapper.Map<GetResturantDto>(restaurant);
-
-            return dto;
-        }
         public async Task<GetResturantDto> DeleteResturant(int id)
         {
             logger.LogInformation($"Delete Resturant {id}");
@@ -61,18 +40,6 @@ namespace Restaurant.Application.Service
             var dto = mapper.Map<GetResturantDto>(restaurant);
             logger.LogInformation("Successfully deleted restaurant with ID: {Id}", id);
             return dto;
-        }
-        public async Task<GetResturantDto> CreateResturant(CreateResturanctDto Dto)
-        {
-            logger.LogInformation("Create Resturant");
-
-            var mapping = mapper.Map<Restaurantt>(Dto);
-
-            await unitOfWork.resturantRepository.CreateAsync(mapping);
-            await unitOfWork.SaveAsync();
-
-            var result = mapper.Map<GetResturantDto>(mapping);
-            return result;
         }
         public async Task<ApiResponse<GetResturantDto>> UpdateResturant(UpdateResturanctDto Dto , int id)
         {

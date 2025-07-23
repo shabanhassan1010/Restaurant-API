@@ -1,6 +1,8 @@
 #region
+using Restaurant.Application.RestaurantService.ServicesExtensions;
 using Restaurant.Infastructure.Extensions;
-using Restaurant.Application.ServicesExtensions;
+using Serilog;
+using Serilog.Events;
 #endregion
 
 
@@ -21,6 +23,16 @@ builder.Services.AddControllers();
 builder.Services.AddEndpointsApiExplorer();
 builder.Services.AddSwaggerGen();
 
+#region Serilog
+builder.Host.UseSerilog((context, configuration) => 
+    configuration
+    .MinimumLevel.Override("Microsoft" , LogEventLevel.Warning)
+    .MinimumLevel.Override("Microsoft.EntityFrameworkCore" , LogEventLevel.Information)
+    .WriteTo.Console(outputTemplate : "[{Timestamp:dd-MM HH:mm:ss} {Level:u3}] |{SourceContext}|{NewLine} {Message:lj}{NewLine}{Exception}")
+);
+#endregion
+
+
 var app = builder.Build();
 
 // Configure the HTTP request pipeline.
@@ -29,6 +41,7 @@ if (app.Environment.IsDevelopment())
     app.UseSwagger();
     app.UseSwaggerUI();
 }
+app.UseSerilogRequestLogging();
 
 app.UseHttpsRedirection();
 

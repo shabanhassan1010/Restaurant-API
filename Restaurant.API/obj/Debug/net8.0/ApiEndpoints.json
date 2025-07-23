@@ -26,7 +26,7 @@
     "Parameters": [
       {
         "Name": "Dto",
-        "Type": "Restaurant.Application.DTOS.Restaurant.Update.UpdateResturanctDto",
+        "Type": "Restaurant.Application.Restaurants.DTOS.Restaurant.Update.UpdateResturanctDto",
         "IsRequired": true
       },
       {
@@ -59,7 +59,7 @@
     "Parameters": [
       {
         "Name": "createResturanctDto",
-        "Type": "Restaurant.Application.DTOS.Restaurant.Write.CreateResturanctDto",
+        "Type": "Restaurant.Application.Restaurants.Commands.CreateResturant.CreateResturantCommand",
         "IsRequired": true
       }
     ],

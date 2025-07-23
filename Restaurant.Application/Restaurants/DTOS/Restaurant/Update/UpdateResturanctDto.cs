@@ -1,11 +1,9 @@
 ﻿using Restaurant.Domain.Entities;
-using System.ComponentModel.DataAnnotations;
 
-namespace Restaurant.Application.DTOS.Restaurant.Write
+namespace Restaurant.Application.Restaurants.DTOS.Restaurant.Update
 {
-    public class CreateResturanctDto
+    public class UpdateResturanctDto
     {
-        public string Name { get; set; }
         public string Description { get; set; }
         public string Category { get; set; }
         public bool HasDelivery { get; set; }
