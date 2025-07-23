@@ -149,3 +149,6 @@ D:\programing\Projects\Resturant Api Project\RestaurantWebsite\Restaurant.API\ob
 D:\programing\Projects\Resturant Api Project\RestaurantWebsite\Restaurant.API\obj\Debug\net8.0\Restaurant.API.sourcelink.json
 D:\programing\Projects\Resturant Api Project\RestaurantWebsite\Restaurant.API\bin\Debug\net8.0\AutoMapper.dll
 D:\programing\Projects\Resturant Api Project\RestaurantWebsite\Restaurant.API\bin\Debug\net8.0\AutoMapper.Extensions.Microsoft.DependencyInjection.dll
+D:\programing\Projects\Resturant Api Project\RestaurantWebsite\Restaurant.API\bin\Debug\net8.0\FluentValidation.dll
+D:\programing\Projects\Resturant Api Project\RestaurantWebsite\Restaurant.API\bin\Debug\net8.0\FluentValidation.AspNetCore.dll
+D:\programing\Projects\Resturant Api Project\RestaurantWebsite\Restaurant.API\bin\Debug\net8.0\FluentValidation.DependencyInjectionExtensions.dll
