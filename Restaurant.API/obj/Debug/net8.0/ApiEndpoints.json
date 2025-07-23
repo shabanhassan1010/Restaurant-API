@@ -1,6 +1,45 @@
 [
   {
     "ContainingType": "Restaurant.API.Controllers.RestaurantController",
+    "Method": "DeleteRestaurant",
+    "RelativePath": "{id}",
+    "HttpMethod": "DELETE",
+    "IsController": true,
+    "Order": 0,
+    "Parameters": [
+      {
+        "Name": "id",
+        "Type": "System.Int32",
+        "IsRequired": true
+      }
+    ],
+    "ReturnTypes": [],
+    "Summary": "Delete Restaurant"
+  },
+  {
+    "ContainingType": "Restaurant.API.Controllers.RestaurantController",
+    "Method": "CreateRestaurant",
+    "RelativePath": "{id}",
+    "HttpMethod": "PUT",
+    "IsController": true,
+    "Order": 0,
+    "Parameters": [
+      {
+        "Name": "Dto",
+        "Type": "Restaurant.Application.DTOS.Restaurant.Update.UpdateResturanctDto",
+        "IsRequired": true
+      },
+      {
+        "Name": "id",
+        "Type": "System.Int32",
+        "IsRequired": true
+      }
+    ],
+    "ReturnTypes": [],
+    "Summary": "Update Restaurant"
+  },
+  {
+    "ContainingType": "Restaurant.API.Controllers.RestaurantController",
     "Method": "GetAll",
     "RelativePath": "api/Restaurant",
     "HttpMethod": "GET",

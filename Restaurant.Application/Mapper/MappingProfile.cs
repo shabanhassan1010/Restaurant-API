@@ -1,5 +1,6 @@
 ﻿using AutoMapper;
 using Restaurant.Application.DTOS.Restaurant.Read;
+using Restaurant.Application.DTOS.Restaurant.Update;
 using Restaurant.Application.DTOS.Restaurant.Write;
 using Restaurant.Domain.Entities;
 
@@ -9,6 +10,7 @@ namespace Restaurant.Application.Mapper
     {
         public MappingProfile()
         {
+            #region Restaurant
             CreateMap<Restaurantt, GetResturantDto>()
                 .ForMember(d => d.Address, opt => opt.MapFrom(src => new Address
                 {
@@ -24,6 +26,15 @@ namespace Restaurant.Application.Mapper
                     City = src.Address.City,
                     PostalCode = src.Address.PostalCode,
                 }));
+
+            CreateMap<UpdateResturanctDto, Restaurantt>()
+                .ForMember(d=>d.Address , opt=>opt.MapFrom(src=> new Address
+                {
+                    Street = src.Address.Street,
+                    City = src.Address.City,
+                    PostalCode = src.Address.PostalCode,
+                }));
+            #endregion
         }
     }
 }
