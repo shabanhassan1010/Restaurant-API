@@ -5,6 +5,14 @@
     {
       "AbsoluteMoniker": "D:0:0:{AAF7E5EB-F1A7-4B2D-AED1-F602E35E0F1C}|Restaurant.API\\Restaurant.API.csproj|d:\\programing\\projects\\resturant api project\\restaurantwebsite\\restaurant.api\\program.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}",
       "RelativeMoniker": "D:0:0:{AAF7E5EB-F1A7-4B2D-AED1-F602E35E0F1C}|Restaurant.API\\Restaurant.API.csproj|solutionrelative:restaurant.api\\program.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}"
+    },
+    {
+      "AbsoluteMoniker": "D:0:0:{83911D2B-7A10-4080-9B66-7B279C90C0CA}|Restaurant.Application\\Restaurant.Application.csproj|d:\\programing\\projects\\resturant api project\\restaurantwebsite\\restaurant.application\\restaurants\\queries\\getbyid\\getbyidqueryhandler.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}",
+      "RelativeMoniker": "D:0:0:{83911D2B-7A10-4080-9B66-7B279C90C0CA}|Restaurant.Application\\Restaurant.Application.csproj|solutionrelative:restaurant.application\\restaurants\\queries\\getbyid\\getbyidqueryhandler.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}"
+    },
+    {
+      "AbsoluteMoniker": "D:0:0:{83911D2B-7A10-4080-9B66-7B279C90C0CA}|Restaurant.Application\\Restaurant.Application.csproj|d:\\programing\\projects\\resturant api project\\restaurantwebsite\\restaurant.application\\restaurants\\commands\\createresturant\\createresturantcommandhandler.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}",
+      "RelativeMoniker": "D:0:0:{83911D2B-7A10-4080-9B66-7B279C90C0CA}|Restaurant.Application\\Restaurant.Application.csproj|solutionrelative:restaurant.application\\restaurants\\commands\\createresturant\\createresturantcommandhandler.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}"
     }
   ],
   "DocumentGroupContainers": [
@@ -70,11 +78,37 @@
               "Title": "Program.cs",
               "DocumentMoniker": "D:\\programing\\Projects\\Resturant Api Project\\RestaurantWebsite\\Restaurant.API\\Program.cs",
               "RelativeDocumentMoniker": "Restaurant.API\\Program.cs",
-              "ToolTip": "D:\\programing\\Projects\\Resturant Api Project\\RestaurantWebsite\\Restaurant.API\\Program.cs*",
-              "RelativeToolTip": "Restaurant.API\\Program.cs*",
-              "ViewState": "AgIAACQAAAAAAAAAAAAAAC8AAAAfAAAAAAAAAA==",
+              "ToolTip": "D:\\programing\\Projects\\Resturant Api Project\\RestaurantWebsite\\Restaurant.API\\Program.cs",
+              "RelativeToolTip": "Restaurant.API\\Program.cs",
+              "ViewState": "AgIAABAAAAAAAAAAAAAAACQAAAAaAAAAAAAAAA==",
               "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000738|",
-              "WhenOpened": "2025-07-23T17:20:50.533Z",
+              "WhenOpened": "2025-07-23T17:46:05.972Z",
+              "EditorCaption": ""
+            },
+            {
+              "$type": "Document",
+              "DocumentIndex": 1,
+              "Title": "GetByIdQueryHandler.cs",
+              "DocumentMoniker": "D:\\programing\\Projects\\Resturant Api Project\\RestaurantWebsite\\Restaurant.Application\\Restaurants\\Queries\\GetById\\GetByIdQueryHandler.cs",
+              "RelativeDocumentMoniker": "Restaurant.Application\\Restaurants\\Queries\\GetById\\GetByIdQueryHandler.cs",
+              "ToolTip": "D:\\programing\\Projects\\Resturant Api Project\\RestaurantWebsite\\Restaurant.Application\\Restaurants\\Queries\\GetById\\GetByIdQueryHandler.cs",
+              "RelativeToolTip": "Restaurant.Application\\Restaurants\\Queries\\GetById\\GetByIdQueryHandler.cs",
+              "ViewState": "AgIAAAYAAAAAAAAAAAAAABoAAAA/AAAAAAAAAA==",
+              "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000738|",
+              "WhenOpened": "2025-07-23T17:42:18.042Z",
+              "EditorCaption": ""
+            },
+            {
+              "$type": "Document",
+              "DocumentIndex": 2,
+              "Title": "CreateResturantCommandHandler.cs",
+              "DocumentMoniker": "D:\\programing\\Projects\\Resturant Api Project\\RestaurantWebsite\\Restaurant.Application\\Restaurants\\Commands\\CreateResturant\\CreateResturantCommandHandler.cs",
+              "RelativeDocumentMoniker": "Restaurant.Application\\Restaurants\\Commands\\CreateResturant\\CreateResturantCommandHandler.cs",
+              "ToolTip": "D:\\programing\\Projects\\Resturant Api Project\\RestaurantWebsite\\Restaurant.Application\\Restaurants\\Commands\\CreateResturant\\CreateResturantCommandHandler.cs",
+              "RelativeToolTip": "Restaurant.Application\\Restaurants\\Commands\\CreateResturant\\CreateResturantCommandHandler.cs",
+              "ViewState": "AgIAABMAAAAAAAAAAAAQwB4AAAAAAAAAAAAAAA==",
+              "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000738|",
+              "WhenOpened": "2025-07-23T17:41:00.714Z",
               "EditorCaption": ""
             }
           ]

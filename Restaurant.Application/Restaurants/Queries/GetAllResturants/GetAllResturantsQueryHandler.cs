@@ -24,7 +24,7 @@ namespace Restaurant.Application.Restaurants.Queries.GetAllResturants
         #endregion
         public async Task<IEnumerable<GetResturantDto>> Handle(GetAllResturantsQuery request, CancellationToken cancellationToken)
         {
-            logger.LogInformation("Get All Restaurants");
+            logger.LogInformation("Get All Restaurants" , request);
             var restaurants = await unitOfWork.resturantRepository.GetAllAsync();
 
             var dto = mapper.Map<IEnumerable<GetResturantDto>>(restaurants);
