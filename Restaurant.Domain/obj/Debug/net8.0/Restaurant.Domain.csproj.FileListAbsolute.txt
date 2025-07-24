@@ -10,3 +10,4 @@ D:\programing\Projects\Resturant Api Project\RestaurantWebsite\Restaurant.Domain
 D:\programing\Projects\Resturant Api Project\RestaurantWebsite\Restaurant.Domain\obj\Debug\net8.0\Restaurant.Domain.pdb
 D:\programing\Projects\Resturant Api Project\RestaurantWebsite\Restaurant.Domain\obj\Debug\net8.0\ref\Restaurant.Domain.dll
 D:\programing\Projects\Resturant Api Project\RestaurantWebsite\Restaurant.Domain\obj\Debug\net8.0\Restaurant.Domain.sourcelink.json
+D:\programing\Projects\Resturant Api Project\RestaurantWebsite\Restaurant.Domain\obj\Debug\net8.0\Restaurant.Domain.csproj.AssemblyReference.cache

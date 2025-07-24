@@ -163,3 +163,10 @@ D:\programing\Projects\Resturant Api Project\RestaurantWebsite\Restaurant.API\bi
 D:\programing\Projects\Resturant Api Project\RestaurantWebsite\Restaurant.API\bin\Debug\net8.0\Serilog.Sinks.Console.dll
 D:\programing\Projects\Resturant Api Project\RestaurantWebsite\Restaurant.API\bin\Debug\net8.0\Serilog.Sinks.Debug.dll
 D:\programing\Projects\Resturant Api Project\RestaurantWebsite\Restaurant.API\bin\Debug\net8.0\Serilog.Sinks.File.dll
+D:\programing\Projects\Resturant Api Project\RestaurantWebsite\Restaurant.API\bin\Debug\net8.0\Microsoft.AspNetCore.Cryptography.Internal.dll
+D:\programing\Projects\Resturant Api Project\RestaurantWebsite\Restaurant.API\bin\Debug\net8.0\Microsoft.AspNetCore.Cryptography.KeyDerivation.dll
+D:\programing\Projects\Resturant Api Project\RestaurantWebsite\Restaurant.API\bin\Debug\net8.0\Microsoft.AspNetCore.Identity.EntityFrameworkCore.dll
+D:\programing\Projects\Resturant Api Project\RestaurantWebsite\Restaurant.API\bin\Debug\net8.0\Microsoft.AspNetCore.Identity.UI.dll
+D:\programing\Projects\Resturant Api Project\RestaurantWebsite\Restaurant.API\bin\Debug\net8.0\Microsoft.Extensions.FileProviders.Embedded.dll
+D:\programing\Projects\Resturant Api Project\RestaurantWebsite\Restaurant.API\bin\Debug\net8.0\Microsoft.Extensions.Identity.Core.dll
+D:\programing\Projects\Resturant Api Project\RestaurantWebsite\Restaurant.API\bin\Debug\net8.0\Microsoft.Extensions.Identity.Stores.dll
