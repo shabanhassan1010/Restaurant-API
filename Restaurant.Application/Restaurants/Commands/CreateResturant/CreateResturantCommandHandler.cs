@@ -9,6 +9,7 @@ namespace Restaurant.Application.Restaurants.Commands.CreateResturant
 {
     public class CreateResturantCommandHandler : IRequestHandler<CreateResturantCommand, GetResturantDto>
     {
+        #region Constructor
         private readonly ILogger<CreateResturantCommandHandler> logger;
         private readonly IMapper mapper;
         private readonly IUnitOfWork unitOfWork;
@@ -20,6 +21,7 @@ namespace Restaurant.Application.Restaurants.Commands.CreateResturant
             this.mapper = mapper;
             this.unitOfWork = unitOfWork;
         }
+        #endregion
         public async Task<GetResturantDto> Handle(CreateResturantCommand request, CancellationToken cancellationToken)
         {
             logger.LogInformation("Create New Resturant {@Resturant}",request);

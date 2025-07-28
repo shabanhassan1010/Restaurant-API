@@ -1,15 +1,13 @@
 #region
+using Restaurant.API.Middlewares;
 using Restaurant.Application.RestaurantService.ServicesExtensions;
 using Restaurant.Infastructure.Extensions;
 using Serilog;
-using Serilog.Events;
 #endregion
-
 
 var builder = WebApplication.CreateBuilder(args);
 
 // Add services to the container.
-
 #region Configure DbContext with SQL Server
 builder.Services.AddInfastructure(builder.Configuration);
 #endregion
@@ -18,17 +16,22 @@ builder.Services.AddInfastructure(builder.Configuration);
 builder.Services.AddApplication();
 #endregion
 
+#region Swagger
 builder.Services.AddControllers();
-// Learn more about configuring Swagger/OpenAPI at https://aka.ms/aspnetcore/swashbuckle
 builder.Services.AddEndpointsApiExplorer();
 builder.Services.AddSwaggerGen();
+#endregion
 
 #region Serilog
 builder.Host.UseSerilog((context, configuration) => configuration.ReadFrom.Configuration(context.Configuration));
 #endregion
 
+builder.Services.AddScoped<ErrorHandlingMiddleware>();
 
 var app = builder.Build();
+
+app.UseMiddleware<ErrorHandlingMiddleware>();
+app.UseSerilogRequestLogging();
 
 // Configure the HTTP request pipeline.
 if (app.Environment.IsDevelopment())
@@ -36,7 +39,6 @@ if (app.Environment.IsDevelopment())
     app.UseSwagger();
     app.UseSwaggerUI();
 }
-app.UseSerilogRequestLogging();
 
 app.UseHttpsRedirection();
 

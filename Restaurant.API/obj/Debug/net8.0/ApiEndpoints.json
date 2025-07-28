@@ -13,7 +13,17 @@
         "IsRequired": true
       }
     ],
-    "ReturnTypes": [],
+    "ReturnTypes": [
+      {
+        "Type": "Restaurant.Application.Restaurants.DTOS.Restaurant.Read.GetResturantDto",
+        "MediaTypes": [
+          "text/plain",
+          "application/json",
+          "text/json"
+        ],
+        "StatusCode": 200
+      }
+    ],
     "Summary": "Delete Restaurant"
   },
   {
@@ -35,7 +45,17 @@
         "IsRequired": true
       }
     ],
-    "ReturnTypes": [],
+    "ReturnTypes": [
+      {
+        "Type": "Restaurant.Application.Restaurants.DTOS.Restaurant.Read.GetResturantDto",
+        "MediaTypes": [
+          "text/plain",
+          "application/json",
+          "text/json"
+        ],
+        "StatusCode": 200
+      }
+    ],
     "Summary": "Update Restaurant"
   },
   {
@@ -46,7 +66,17 @@
     "IsController": true,
     "Order": 0,
     "Parameters": [],
-    "ReturnTypes": [],
+    "ReturnTypes": [
+      {
+        "Type": "System.Collections.Generic.IEnumerable\u00601[[Restaurant.Application.Restaurants.DTOS.Restaurant.Read.GetResturantDto, Restaurant.Application, Version=1.0.0.0, Culture=neutral, PublicKeyToken=null]]",
+        "MediaTypes": [
+          "text/plain",
+          "application/json",
+          "text/json"
+        ],
+        "StatusCode": 200
+      }
+    ],
     "Summary": "Get all Restaurants"
   },
   {
@@ -63,7 +93,17 @@
         "IsRequired": true
       }
     ],
-    "ReturnTypes": [],
+    "ReturnTypes": [
+      {
+        "Type": "Restaurant.Application.Restaurants.DTOS.Restaurant.Read.GetResturantDto",
+        "MediaTypes": [
+          "text/plain",
+          "application/json",
+          "text/json"
+        ],
+        "StatusCode": 200
+      }
+    ],
     "Summary": "Create Restaurant"
   },
   {
@@ -80,7 +120,17 @@
         "IsRequired": true
       }
     ],
-    "ReturnTypes": [],
+    "ReturnTypes": [
+      {
+        "Type": "Restaurant.Application.Restaurants.DTOS.Restaurant.Read.GetResturantDto",
+        "MediaTypes": [
+          "text/plain",
+          "application/json",
+          "text/json"
+        ],
+        "StatusCode": 200
+      }
+    ],
     "Summary": "Get Restaurant By Id"
   }
 ]

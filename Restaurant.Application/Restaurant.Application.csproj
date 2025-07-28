@@ -19,6 +19,7 @@
 
   <ItemGroup>
     <Folder Include="Restaurants\Commands\UpdateResturant\" />
+    <Folder Include="Restaurants\DTOS\Account\Update\" />
   </ItemGroup>
 
 </Project>

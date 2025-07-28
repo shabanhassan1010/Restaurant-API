@@ -31,7 +31,7 @@ namespace Restaurant.API.Controllers
         #region Get All 
         [HttpGet]
         [EndpointSummary("Get all Restaurants")]
-        public async Task<IActionResult> GetAll()
+        public async Task<ActionResult<IEnumerable<GetResturantDto>>> GetAll()
         {
             var restaurants = await mediator.Send(new GetAllResturantsQuery());
             return Ok(restaurants);
@@ -41,7 +41,7 @@ namespace Restaurant.API.Controllers
         #region Get Restaurant By Id
         [HttpGet("{id}")]
         [EndpointSummary("Get Restaurant By Id")]
-        public async Task<IActionResult> GetById([FromRoute] int id)
+        public async Task<ActionResult<GetResturantDto>> GetById([FromRoute] int id)
         {
             var restaurants = await mediator.Send(new GetByIdQuery(id));
 
@@ -65,19 +65,20 @@ namespace Restaurant.API.Controllers
         #region  Create Resturant
         [HttpPost]
         [EndpointSummary("Create Restaurant")]
-        public async Task<IActionResult> CreateRestaurant([FromBody] CreateResturantCommand createResturanctDto)
+        public async Task<ActionResult<GetResturantDto>> CreateRestaurant([FromBody] CreateResturantCommand createResturanctDto)
         {
-            var resturant = await mediator.Send(createResturanctDto);
-            if (resturant == null)
-                return BadRequest();
-            return CreatedAtAction(nameof(GetById) ,  new { id = resturant.Id }, resturant);
+                var resturant = await mediator.Send(createResturanctDto);
+                if (resturant == null)
+                    return BadRequest();
+                return CreatedAtAction(nameof(GetById), new { id = resturant.Id }, resturant);
+            
         }
         #endregion
 
         #region Delete Resturant
         [HttpDelete("/{id}")]
         [EndpointSummary("Delete Restaurant")]
-        public async Task<IActionResult> DeleteRestaurant([FromRoute]int id)
+        public async Task<ActionResult<GetResturantDto>> DeleteRestaurant([FromRoute]int id)
         {
             var resturant = await _service.DeleteResturant(id);
             if (resturant == null)
@@ -101,7 +102,7 @@ namespace Restaurant.API.Controllers
         #region Update Resturant
         [HttpPut("/{id}")]
         [EndpointSummary("Update Restaurant")]
-        public async Task<IActionResult> CreateRestaurant([FromBody]UpdateResturanctDto Dto ,[FromRoute] int id)
+        public async Task<ActionResult<GetResturantDto>> CreateRestaurant([FromBody]UpdateResturanctDto Dto ,[FromRoute] int id)
         {
             var resturant = await _service.UpdateResturant(Dto , id);
             if (!resturant.Success)

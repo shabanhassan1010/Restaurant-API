@@ -2,7 +2,7 @@
 using MediatR;
 using Microsoft.Extensions.Logging;
 using Restaurant.Application.Restaurants.DTOS.Restaurant.Read;
-using Restaurant.Application.Restaurants.Queries.GetAllResturants;
+using Restaurant.Domain.Exepections;
 using Restaurant.Domain.IRepository;
 
 namespace Restaurant.Application.Restaurants.Queries.GetById
@@ -27,7 +27,7 @@ namespace Restaurant.Application.Restaurants.Queries.GetById
             logger.LogInformation($"Get Resturant {request.Id}");
             var restaurant = await unitOfWork.resturantRepository.GetByIdAsync(request.Id);
             if (restaurant == null)
-                return null;
+                throw new NotFoundExepection($"Resturant with {request.Id} Not Found");
 
             var dto = mapper.Map<GetResturantDto>(restaurant);
 
