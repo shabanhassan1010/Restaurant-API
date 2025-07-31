@@ -8,6 +8,7 @@ namespace Restaurant.Infastructure.Data.Configurations
     {
         public void Configure(EntityTypeBuilder<Dish> builder)
         {
+            builder.HasQueryFilter(r => !r.IsDeleted);
         }
     }
 }

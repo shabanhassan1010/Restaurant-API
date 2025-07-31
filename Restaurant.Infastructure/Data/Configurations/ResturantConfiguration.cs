@@ -16,8 +16,11 @@ namespace Restaurant.Infastructure.Data.Configurations
             builder.OwnsOne(r => r.Address);
 
             builder.HasMany(r => r.Dishes)
-                .WithOne()
-                .HasForeignKey(x => x.RestaurantId);
+                .WithOne(d => d.Restaurant)
+                .HasForeignKey(d => d.RestaurantId)
+                .OnDelete(DeleteBehavior.Restrict);
+
+            builder.HasQueryFilter(r => !r.IsDeleted);
         }
     }
 }

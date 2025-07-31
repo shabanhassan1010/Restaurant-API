@@ -1,5 +1,4 @@
-﻿
-namespace Restaurant.Application.Restaurants.DTOS.Account.Read
+﻿namespace Restaurant.Application.Account.DTOS.Account.Read
 {
     public class TokenDto
     {

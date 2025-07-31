@@ -1,7 +1,4 @@
 ﻿using Microsoft.AspNetCore.Identity;
-using Restaurant.Application.Restaurants.DTOS.Account.Read;
-using Restaurant.Application.Restaurants.DTOS.Account.Write;
-
 namespace Restaurant.Application.RestaurantService.IService
 {
     public interface IAccountService

@@ -2,9 +2,9 @@
 
 namespace Restaurant.Application.Restaurants.Commands.CreateResturant
 {
-    public class CreateResturantCommandDtoValidators : AbstractValidator<CreateResturantCommand>
+    public class CreateResturantCommandValidators : AbstractValidator<CreateResturantCommand>
     {
-        public CreateResturantCommandDtoValidators()
+        public CreateResturantCommandValidators()
         {
             RuleFor(dto => dto.Name)
                 .NotEmpty().WithMessage("Name is required.")

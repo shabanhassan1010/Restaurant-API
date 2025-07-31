@@ -1,7 +1,6 @@
-﻿
-using Restaurant.Domain.Entities.Roles;
+﻿using Restaurant.Domain.Entities.Roles;
 
-namespace Restaurant.Application.Restaurants.DTOS.Account.Write
+namespace Restaurant.Application.Account.DTOS.Account.Write
 {
     public class RegisterDto
     {

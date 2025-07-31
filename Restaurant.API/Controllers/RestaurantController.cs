@@ -2,9 +2,12 @@
 using MediatR;
 using Microsoft.AspNetCore.Mvc;
 using Restaurant.Application.CustomeResponse;
+using Restaurant.Application.Dishes.DTOS.Dish;
 using Restaurant.Application.Restaurants.Commands.CreateResturant;
+using Restaurant.Application.Restaurants.Commands.DeleteResturant;
+using Restaurant.Application.Restaurants.Commands.UpdateResturant;
 using Restaurant.Application.Restaurants.DTOS.Restaurant.Read;
-using Restaurant.Application.Restaurants.DTOS.Restaurant.Update;
+using Restaurant.Application.Restaurants.Queries.GetAllDishesInResturant;
 using Restaurant.Application.Restaurants.Queries.GetAllResturants;
 using Restaurant.Application.Restaurants.Queries.GetById;
 using Restaurant.Application.RestaurantService.IService;
@@ -18,17 +21,15 @@ namespace Restaurant.API.Controllers
     public class RestaurantController : ControllerBase
     {
         #region resturantService
-        private readonly IResturantService _service;
         private readonly IMediator mediator;
 
-        public RestaurantController(IResturantService resturantService , IMediator mediator)
+        public RestaurantController( IMediator mediator)
         {
-            _service = resturantService;
             this.mediator = mediator;
         }
         #endregion
 
-        #region Get All 
+        #region Get All Restaurants
         [HttpGet]
         [EndpointSummary("Get all Restaurants")]
         public async Task<ActionResult<IEnumerable<GetResturantDto>>> GetAll()
@@ -38,10 +39,21 @@ namespace Restaurant.API.Controllers
         }
         #endregion
 
+        #region Get All Dishes With Specific Resturant Id
+        [HttpGet("GetAllDishes/{restaurantId}")]
+        [EndpointSummary("Get All Dishes With Specific restaurant Id")]
+        public async Task<ActionResult<IEnumerable<GetDishDto>>> GetAllDishes(int restaurantId)
+        {
+            var restaurants = await mediator.Send(new GetAllDishesWithSpecificResturantQuery(restaurantId));
+            return Ok(restaurants);
+        }
+
+        #endregion
+
         #region Get Restaurant By Id
-        [HttpGet("{id}")]
+        [HttpGet("GetById/{id}")]
         [EndpointSummary("Get Restaurant By Id")]
-        public async Task<ActionResult<GetResturantDto>> GetById([FromRoute] int id)
+        public async Task<ActionResult<GetResturantDto>> GetById(int id)
         {
             var restaurants = await mediator.Send(new GetByIdQuery(id));
 
@@ -80,35 +92,27 @@ namespace Restaurant.API.Controllers
         [EndpointSummary("Delete Restaurant")]
         public async Task<ActionResult<GetResturantDto>> DeleteRestaurant([FromRoute]int id)
         {
-            var resturant = await _service.DeleteResturant(id);
-            if (resturant == null)
+            var resturant = await mediator.Send(new DeleteResturantCommand(id));
+            if (!resturant.Success)
             {
-                return NotFound(new ApiResponse<string>
-                {
-                    Success = false, 
-                    Message = $"Restaurant with ID {id} not found.",  
-                    Data = null
-                });
+                return NotFound(resturant);
             }
-            return Ok(new ApiResponse<GetResturantDto>
-            {
-                Success = true, 
-                Message = "Restaurant deleted successfully.", 
-                Data = resturant
-            });
+
+            return Ok(resturant);
         }
         #endregion
 
         #region Update Resturant
-        [HttpPut("/{id}")]
+        [HttpPut("{id}")]
         [EndpointSummary("Update Restaurant")]
-        public async Task<ActionResult<GetResturantDto>> CreateRestaurant([FromBody]UpdateResturanctDto Dto ,[FromRoute] int id)
+        public async Task<ActionResult<GetResturantDto>> UpdateRestaurant([FromBody]UpdateResturantCommand updateResturantCommand ,[FromRoute] int id)
         {
-            var resturant = await _service.UpdateResturant(Dto , id);
-            if (!resturant.Success)
-                return NotFound(resturant);
+            updateResturantCommand.Id = id;
+            var IsUpdated = await mediator.Send(updateResturantCommand);
+            if (IsUpdated == null)
+                return NotFound();
 
-            return Ok(resturant);
+            return Ok(IsUpdated);
         }
         #endregion
     }

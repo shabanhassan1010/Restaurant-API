@@ -1,6 +1,6 @@
 #region
 using Restaurant.API.Middlewares;
-using Restaurant.Application.RestaurantService.ServicesExtensions;
+using Restaurant.Application.Extensions;
 using Restaurant.Infastructure.Extensions;
 using Serilog;
 #endregion
@@ -27,10 +27,13 @@ builder.Host.UseSerilog((context, configuration) => configuration.ReadFrom.Confi
 #endregion
 
 builder.Services.AddScoped<ErrorHandlingMiddleware>();
+builder.Services.AddScoped<RequestTimeLoggingMiddleware>();
 
 var app = builder.Build();
 
 app.UseMiddleware<ErrorHandlingMiddleware>();
+app.UseMiddleware<RequestTimeLoggingMiddleware>();
+app.UseMiddleware<RateLimitingMiddleware>();
 app.UseSerilogRequestLogging();
 
 // Configure the HTTP request pipeline.

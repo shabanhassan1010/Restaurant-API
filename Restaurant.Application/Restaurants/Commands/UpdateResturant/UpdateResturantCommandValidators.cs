@@ -1,12 +1,14 @@
 ﻿using FluentValidation;
-using Restaurant.Application.Restaurants.DTOS.Restaurant.Update;
 
-namespace Restaurant.Application.Validators
+namespace Restaurant.Application.Restaurants.Commands.UpdateResturant
 {
-    public class UpdateResturantDtoValidators : AbstractValidator<UpdateResturanctDto>
+    public class UpdateResturantCommandValidators : AbstractValidator<UpdateResturantCommand>
     {
-        public UpdateResturantDtoValidators()
+        public UpdateResturantCommandValidators()
         {
+            RuleFor(dto => dto.Name)
+                .NotEmpty().WithMessage("Name is required.")
+                .Length(3, 100).WithMessage("Name must be between 3 and 100 characters.");
 
             RuleFor(dto => dto.Description)
                 .NotEmpty().WithMessage("Description is Requried")

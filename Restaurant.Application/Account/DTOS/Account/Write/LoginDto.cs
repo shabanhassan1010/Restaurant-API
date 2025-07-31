@@ -1,5 +1,4 @@
-﻿
-namespace Restaurant.Application.Restaurants.DTOS.Account.Write
+﻿namespace Restaurant.Application.Account.DTOS.Account.Write
 {
     public class LoginDto
     {

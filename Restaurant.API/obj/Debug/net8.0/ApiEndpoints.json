@@ -28,38 +28,6 @@
   },
   {
     "ContainingType": "Restaurant.API.Controllers.RestaurantController",
-    "Method": "CreateRestaurant",
-    "RelativePath": "{id}",
-    "HttpMethod": "PUT",
-    "IsController": true,
-    "Order": 0,
-    "Parameters": [
-      {
-        "Name": "Dto",
-        "Type": "Restaurant.Application.Restaurants.DTOS.Restaurant.Update.UpdateResturanctDto",
-        "IsRequired": true
-      },
-      {
-        "Name": "id",
-        "Type": "System.Int32",
-        "IsRequired": true
-      }
-    ],
-    "ReturnTypes": [
-      {
-        "Type": "Restaurant.Application.Restaurants.DTOS.Restaurant.Read.GetResturantDto",
-        "MediaTypes": [
-          "text/plain",
-          "application/json",
-          "text/json"
-        ],
-        "StatusCode": 200
-      }
-    ],
-    "Summary": "Update Restaurant"
-  },
-  {
-    "ContainingType": "Restaurant.API.Controllers.RestaurantController",
     "Method": "GetAll",
     "RelativePath": "api/Restaurant",
     "HttpMethod": "GET",
@@ -108,8 +76,67 @@
   },
   {
     "ContainingType": "Restaurant.API.Controllers.RestaurantController",
-    "Method": "GetById",
+    "Method": "UpdateRestaurant",
     "RelativePath": "api/Restaurant/{id}",
+    "HttpMethod": "PUT",
+    "IsController": true,
+    "Order": 0,
+    "Parameters": [
+      {
+        "Name": "updateResturantCommand",
+        "Type": "Restaurant.Application.Restaurants.Commands.UpdateResturant.UpdateResturantCommand",
+        "IsRequired": true
+      },
+      {
+        "Name": "id",
+        "Type": "System.Int32",
+        "IsRequired": true
+      }
+    ],
+    "ReturnTypes": [
+      {
+        "Type": "Restaurant.Application.Restaurants.DTOS.Restaurant.Read.GetResturantDto",
+        "MediaTypes": [
+          "text/plain",
+          "application/json",
+          "text/json"
+        ],
+        "StatusCode": 200
+      }
+    ],
+    "Summary": "Update Restaurant"
+  },
+  {
+    "ContainingType": "Restaurant.API.Controllers.RestaurantController",
+    "Method": "GetAllDishes",
+    "RelativePath": "api/Restaurant/GetAllDishes/{restaurantId}",
+    "HttpMethod": "GET",
+    "IsController": true,
+    "Order": 0,
+    "Parameters": [
+      {
+        "Name": "restaurantId",
+        "Type": "System.Int32",
+        "IsRequired": true
+      }
+    ],
+    "ReturnTypes": [
+      {
+        "Type": "System.Collections.Generic.IEnumerable\u00601[[Restaurant.Application.Dishes.DTOS.Dish.GetDishDto, Restaurant.Application, Version=1.0.0.0, Culture=neutral, PublicKeyToken=null]]",
+        "MediaTypes": [
+          "text/plain",
+          "application/json",
+          "text/json"
+        ],
+        "StatusCode": 200
+      }
+    ],
+    "Summary": "Get All Dishes With Specific restaurant Id"
+  },
+  {
+    "ContainingType": "Restaurant.API.Controllers.RestaurantController",
+    "Method": "GetById",
+    "RelativePath": "api/Restaurant/GetById/{id}",
     "HttpMethod": "GET",
     "IsController": true,
     "Order": 0,

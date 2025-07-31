@@ -4,7 +4,7 @@ using Microsoft.Extensions.DependencyInjection;
 using Restaurant.Application.RestaurantService.IService;
 using Restaurant.Application.RestaurantService.Service;
 
-namespace Restaurant.Application.RestaurantService.ServicesExtensions
+namespace Restaurant.Application.Extensions
 {
     public static class ServiceCollectionExtensions
     {

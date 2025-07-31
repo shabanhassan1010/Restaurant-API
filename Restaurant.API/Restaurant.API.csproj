@@ -21,4 +21,8 @@
     <ProjectReference Include="..\Restaurant.Infastructure\Restaurant.Infastructure.csproj" />
   </ItemGroup>
 
+  <ItemGroup>
+    <Folder Include="Logs\" />
+  </ItemGroup>
+
 </Project>

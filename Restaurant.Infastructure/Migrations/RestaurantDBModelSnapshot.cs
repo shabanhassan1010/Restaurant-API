@@ -167,6 +167,9 @@ namespace Restaurant.Infastructure.Migrations
                         .IsRequired()
                         .HasColumnType("nvarchar(max)");
 
+                    b.Property<bool>("IsDeleted")
+                        .HasColumnType("bit");
+
                     b.Property<string>("Name")
                         .IsRequired()
                         .HasColumnType("nvarchar(max)");
@@ -207,6 +210,9 @@ namespace Restaurant.Infastructure.Migrations
                         .HasColumnType("nvarchar(max)");
 
                     b.Property<bool>("HasDelivery")
+                        .HasColumnType("bit");
+
+                    b.Property<bool>("IsDeleted")
                         .HasColumnType("bit");
 
                     b.Property<string>("Name")
@@ -348,11 +354,13 @@ namespace Restaurant.Infastructure.Migrations
 
             modelBuilder.Entity("Restaurant.Domain.Entities.Dish", b =>
                 {
-                    b.HasOne("Restaurant.Domain.Entities.Restaurantt", null)
+                    b.HasOne("Restaurant.Domain.Entities.Restaurantt", "Restaurant")
                         .WithMany("Dishes")
                         .HasForeignKey("RestaurantId")
-                        .OnDelete(DeleteBehavior.Cascade)
+                        .OnDelete(DeleteBehavior.Restrict)
                         .IsRequired();
+
+                    b.Navigation("Restaurant");
                 });
 
             modelBuilder.Entity("Restaurant.Domain.Entities.Restaurantt", b =>

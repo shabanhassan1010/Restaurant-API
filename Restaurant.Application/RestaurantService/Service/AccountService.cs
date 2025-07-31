@@ -1,7 +1,5 @@
 ﻿using Microsoft.AspNetCore.Identity;
 using Microsoft.Extensions.Logging;
-using Restaurant.Application.Restaurants.DTOS.Account.Read;
-using Restaurant.Application.Restaurants.DTOS.Account.Write;
 using Restaurant.Application.RestaurantService.IService;
 using Restaurant.Domain.Entities;
 using Restaurant.Domain.Entities.Roles;
