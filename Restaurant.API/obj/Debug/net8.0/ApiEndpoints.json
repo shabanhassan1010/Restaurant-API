@@ -40,7 +40,17 @@
         "IsRequired": true
       }
     ],
-    "ReturnTypes": [],
+    "ReturnTypes": [
+      {
+        "Type": "Restaurant.Application.Dishes.DTOS.Dish.GetDishDto",
+        "MediaTypes": [
+          "text/plain",
+          "application/json",
+          "text/json"
+        ],
+        "StatusCode": 200
+      }
+    ],
     "Summary": "Restore soft-deleted dish"
   },
   {
@@ -62,7 +72,17 @@
         "IsRequired": true
       }
     ],
-    "ReturnTypes": [],
+    "ReturnTypes": [
+      {
+        "Type": "Restaurant.Application.Dishes.DTOS.Dish.GetDishDto",
+        "MediaTypes": [
+          "text/plain",
+          "application/json",
+          "text/json"
+        ],
+        "StatusCode": 200
+      }
+    ],
     "Summary": "Create Dish"
   },
   {
@@ -84,7 +104,17 @@
         "IsRequired": true
       }
     ],
-    "ReturnTypes": [],
+    "ReturnTypes": [
+      {
+        "Type": "Restaurant.Application.Dishes.DTOS.Dish.GetDishDto",
+        "MediaTypes": [
+          "text/plain",
+          "application/json",
+          "text/json"
+        ],
+        "StatusCode": 200
+      }
+    ],
     "Summary": "Delete Dish from Restaurant"
   },
   {

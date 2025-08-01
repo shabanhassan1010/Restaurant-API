@@ -3,6 +3,7 @@ using Microsoft.AspNetCore.Mvc;
 using Restaurant.Application.Dishes.Commands.CreateDish;
 using Restaurant.Application.Dishes.Commands.DeleteDish;
 using Restaurant.Application.Dishes.Commands.RestoreDish;
+using Restaurant.Application.Dishes.DTOS.Dish;
 namespace Restaurant.API.Controllers
 {
     [Route("api/[controller]")]
@@ -20,7 +21,7 @@ namespace Restaurant.API.Controllers
         #region Create Dish
         [HttpPost("{RestaurantId}")]
         [EndpointSummary("Create Dish")]
-        public async Task<IActionResult> CreateDish([FromRoute] int RestaurantId, CreateDishCommand createDishesCommand)
+        public async Task<ActionResult<GetDishDto>> CreateDish([FromRoute] int RestaurantId, CreateDishCommand createDishesCommand)
         {
             createDishesCommand.RestaurantId = RestaurantId;
             var result = await mediatR.Send(createDishesCommand);
@@ -33,7 +34,7 @@ namespace Restaurant.API.Controllers
         #region Soft Delete for Dish From Restaurant
         [HttpDelete("{resturantId}/{dishId}")]
         [EndpointSummary("Delete Dish from Restaurant")]
-        public async Task<IActionResult> DeleteDishFromRestaurant([FromRoute] int resturantId , [FromRoute] int dishId)
+        public async Task<ActionResult<GetDishDto>> DeleteDishFromRestaurant([FromRoute] int resturantId , [FromRoute] int dishId)
         {
             var result = await mediatR.Send(new DeleteDishFromResturantCommand(resturantId, dishId));
             if (!result.Success)
@@ -46,7 +47,7 @@ namespace Restaurant.API.Controllers
         #region Restore soft deleted dish
         [HttpPatch("{dishId}")]
         [EndpointSummary("Restore soft-deleted dish")]
-        public async Task<IActionResult> RestoreDish([FromRoute] int dishId)
+        public async Task<ActionResult<GetDishDto>> RestoreDish([FromRoute] int dishId)
         {
             var result = await mediatR.Send(new RestoreDishCommand(dishId));
             if (!result.Success)

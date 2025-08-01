@@ -7,24 +7,8 @@
       "RelativeMoniker": "D:0:0:{AAF7E5EB-F1A7-4B2D-AED1-F602E35E0F1C}|Restaurant.API\\Restaurant.API.csproj|solutionrelative:restaurant.api\\controllers\\dishescontroller.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}"
     },
     {
-      "AbsoluteMoniker": "D:0:0:{83911D2B-7A10-4080-9B66-7B279C90C0CA}|Restaurant.Application\\Restaurant.Application.csproj|d:\\programing\\projects\\resturant api project\\restaurantwebsite\\restaurant.application\\dishes\\commands\\restoredish\\restoredishcommandhandler.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}",
-      "RelativeMoniker": "D:0:0:{83911D2B-7A10-4080-9B66-7B279C90C0CA}|Restaurant.Application\\Restaurant.Application.csproj|solutionrelative:restaurant.application\\dishes\\commands\\restoredish\\restoredishcommandhandler.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}"
-    },
-    {
-      "AbsoluteMoniker": "D:0:0:{83911D2B-7A10-4080-9B66-7B279C90C0CA}|Restaurant.Application\\Restaurant.Application.csproj|d:\\programing\\projects\\resturant api project\\restaurantwebsite\\restaurant.application\\dishes\\commands\\deletedish\\deletedishcommandhandler.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}",
-      "RelativeMoniker": "D:0:0:{83911D2B-7A10-4080-9B66-7B279C90C0CA}|Restaurant.Application\\Restaurant.Application.csproj|solutionrelative:restaurant.application\\dishes\\commands\\deletedish\\deletedishcommandhandler.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}"
-    },
-    {
-      "AbsoluteMoniker": "D:0:0:{958E7C30-31D3-4DCA-96E0-4EFF6C373A3B}|Restaurant.Infastructure\\Restaurant.Infastructure.csproj|d:\\programing\\projects\\resturant api project\\restaurantwebsite\\restaurant.infastructure\\data\\repoimplementations\\dishrepository.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}",
-      "RelativeMoniker": "D:0:0:{958E7C30-31D3-4DCA-96E0-4EFF6C373A3B}|Restaurant.Infastructure\\Restaurant.Infastructure.csproj|solutionrelative:restaurant.infastructure\\data\\repoimplementations\\dishrepository.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}"
-    },
-    {
-      "AbsoluteMoniker": "D:0:0:{0810BBA9-4306-4473-B968-E0BD64D45859}|Restaurant.Domain\\Restaurant.Domain.csproj|d:\\programing\\projects\\resturant api project\\restaurantwebsite\\restaurant.domain\\irepository\\idishrepository.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}",
-      "RelativeMoniker": "D:0:0:{0810BBA9-4306-4473-B968-E0BD64D45859}|Restaurant.Domain\\Restaurant.Domain.csproj|solutionrelative:restaurant.domain\\irepository\\idishrepository.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}"
-    },
-    {
-      "AbsoluteMoniker": "D:0:0:{83911D2B-7A10-4080-9B66-7B279C90C0CA}|Restaurant.Application\\Restaurant.Application.csproj|d:\\programing\\projects\\resturant api project\\restaurantwebsite\\restaurant.application\\dishes\\commands\\restoredish\\restoredishcommand.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}",
-      "RelativeMoniker": "D:0:0:{83911D2B-7A10-4080-9B66-7B279C90C0CA}|Restaurant.Application\\Restaurant.Application.csproj|solutionrelative:restaurant.application\\dishes\\commands\\restoredish\\restoredishcommand.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}"
+      "AbsoluteMoniker": "D:0:0:{AAF7E5EB-F1A7-4B2D-AED1-F602E35E0F1C}|Restaurant.API\\Restaurant.API.csproj|d:\\programing\\projects\\resturant api project\\restaurantwebsite\\restaurant.api\\controllers\\restaurantcontroller.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}",
+      "RelativeMoniker": "D:0:0:{AAF7E5EB-F1A7-4B2D-AED1-F602E35E0F1C}|Restaurant.API\\Restaurant.API.csproj|solutionrelative:restaurant.api\\controllers\\restaurantcontroller.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}"
     }
   ],
   "DocumentGroupContainers": [
@@ -44,10 +28,23 @@
               "RelativeDocumentMoniker": "Restaurant.API\\Controllers\\DishesController.cs",
               "ToolTip": "D:\\programing\\Projects\\Resturant Api Project\\RestaurantWebsite\\Restaurant.API\\Controllers\\DishesController.cs",
               "RelativeToolTip": "Restaurant.API\\Controllers\\DishesController.cs",
-              "ViewState": "AgIAABIAAAAAAAAAAAAAwDIAAAAMAAAAAAAAAA==",
+              "ViewState": "AgIAAAAAAAAAAAAAAAAAADkAAAASAAAAAAAAAA==",
               "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000738|",
               "WhenOpened": "2025-07-31T23:38:20.303Z",
               "IsPinned": true,
+              "EditorCaption": ""
+            },
+            {
+              "$type": "Document",
+              "DocumentIndex": 1,
+              "Title": "RestaurantController.cs",
+              "DocumentMoniker": "D:\\programing\\Projects\\Resturant Api Project\\RestaurantWebsite\\Restaurant.API\\Controllers\\RestaurantController.cs",
+              "RelativeDocumentMoniker": "Restaurant.API\\Controllers\\RestaurantController.cs",
+              "ToolTip": "D:\\programing\\Projects\\Resturant Api Project\\RestaurantWebsite\\Restaurant.API\\Controllers\\RestaurantController.cs",
+              "RelativeToolTip": "Restaurant.API\\Controllers\\RestaurantController.cs",
+              "ViewState": "AgIAABYAAAAAAAAAAAAAwB0AAAASAAAAAAAAAA==",
+              "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000738|",
+              "WhenOpened": "2025-08-01T00:29:54.98Z",
               "EditorCaption": ""
             },
             {
@@ -97,71 +94,6 @@
             {
               "$type": "Bookmark",
               "Name": "ST:0:0:{0ad07096-bba9-4900-a651-0598d26f6d24}"
-            },
-            {
-              "$type": "Document",
-              "DocumentIndex": 1,
-              "Title": "RestoreDishCommandHandler.cs",
-              "DocumentMoniker": "D:\\programing\\Projects\\Resturant Api Project\\RestaurantWebsite\\Restaurant.Application\\Dishes\\Commands\\RestoreDish\\RestoreDishCommandHandler.cs",
-              "RelativeDocumentMoniker": "Restaurant.Application\\Dishes\\Commands\\RestoreDish\\RestoreDishCommandHandler.cs",
-              "ToolTip": "D:\\programing\\Projects\\Resturant Api Project\\RestaurantWebsite\\Restaurant.Application\\Dishes\\Commands\\RestoreDish\\RestoreDishCommandHandler.cs",
-              "RelativeToolTip": "Restaurant.Application\\Dishes\\Commands\\RestoreDish\\RestoreDishCommandHandler.cs",
-              "ViewState": "AgIAAA8AAAAAAAAAAAAQwB4AAAAkAAAAAAAAAA==",
-              "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000738|",
-              "WhenOpened": "2025-08-01T00:10:03.849Z",
-              "EditorCaption": ""
-            },
-            {
-              "$type": "Document",
-              "DocumentIndex": 5,
-              "Title": "RestoreDishCommand.cs",
-              "DocumentMoniker": "D:\\programing\\Projects\\Resturant Api Project\\RestaurantWebsite\\Restaurant.Application\\Dishes\\Commands\\RestoreDish\\RestoreDishCommand.cs",
-              "RelativeDocumentMoniker": "Restaurant.Application\\Dishes\\Commands\\RestoreDish\\RestoreDishCommand.cs",
-              "ToolTip": "D:\\programing\\Projects\\Resturant Api Project\\RestaurantWebsite\\Restaurant.Application\\Dishes\\Commands\\RestoreDish\\RestoreDishCommand.cs",
-              "RelativeToolTip": "Restaurant.Application\\Dishes\\Commands\\RestoreDish\\RestoreDishCommand.cs",
-              "ViewState": "AgIAAAAAAAAAAAAAAAAAAAwAAAAIAAAAAAAAAA==",
-              "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000738|",
-              "WhenOpened": "2025-08-01T00:09:40.448Z",
-              "EditorCaption": ""
-            },
-            {
-              "$type": "Document",
-              "DocumentIndex": 4,
-              "Title": "IDishRepository.cs",
-              "DocumentMoniker": "D:\\programing\\Projects\\Resturant Api Project\\RestaurantWebsite\\Restaurant.Domain\\IRepository\\IDishRepository.cs",
-              "RelativeDocumentMoniker": "Restaurant.Domain\\IRepository\\IDishRepository.cs",
-              "ToolTip": "D:\\programing\\Projects\\Resturant Api Project\\RestaurantWebsite\\Restaurant.Domain\\IRepository\\IDishRepository.cs*",
-              "RelativeToolTip": "Restaurant.Domain\\IRepository\\IDishRepository.cs*",
-              "ViewState": "AgIAAAAAAAAAAAAAAAAuwAMAAAABAAAAAAAAAA==",
-              "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000738|",
-              "WhenOpened": "2025-07-31T23:43:41.825Z",
-              "EditorCaption": ""
-            },
-            {
-              "$type": "Document",
-              "DocumentIndex": 3,
-              "Title": "DishRepository.cs",
-              "DocumentMoniker": "D:\\programing\\Projects\\Resturant Api Project\\RestaurantWebsite\\Restaurant.Infastructure\\Data\\RepoImplementations\\DishRepository.cs",
-              "RelativeDocumentMoniker": "Restaurant.Infastructure\\Data\\RepoImplementations\\DishRepository.cs",
-              "ToolTip": "D:\\programing\\Projects\\Resturant Api Project\\RestaurantWebsite\\Restaurant.Infastructure\\Data\\RepoImplementations\\DishRepository.cs*",
-              "RelativeToolTip": "Restaurant.Infastructure\\Data\\RepoImplementations\\DishRepository.cs*",
-              "ViewState": "AgIAABkAAAAAAAAAAAAQwC0AAAAFAAAAAAAAAA==",
-              "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000738|",
-              "WhenOpened": "2025-07-31T23:41:22.061Z",
-              "EditorCaption": ""
-            },
-            {
-              "$type": "Document",
-              "DocumentIndex": 2,
-              "Title": "DeleteDishCommandHandler.cs",
-              "DocumentMoniker": "D:\\programing\\Projects\\Resturant Api Project\\RestaurantWebsite\\Restaurant.Application\\Dishes\\Commands\\DeleteDish\\DeleteDishCommandHandler.cs",
-              "RelativeDocumentMoniker": "Restaurant.Application\\Dishes\\Commands\\DeleteDish\\DeleteDishCommandHandler.cs",
-              "ToolTip": "D:\\programing\\Projects\\Resturant Api Project\\RestaurantWebsite\\Restaurant.Application\\Dishes\\Commands\\DeleteDish\\DeleteDishCommandHandler.cs",
-              "RelativeToolTip": "Restaurant.Application\\Dishes\\Commands\\DeleteDish\\DeleteDishCommandHandler.cs",
-              "ViewState": "AgIAAAgAAAAAAAAAAAAAACIAAAAyAAAAAAAAAA==",
-              "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000738|",
-              "WhenOpened": "2025-07-31T23:40:28.479Z",
-              "EditorCaption": ""
             }
           ]
         }
