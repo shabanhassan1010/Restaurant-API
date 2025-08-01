@@ -7,11 +7,10 @@ using Restaurant.Domain.Entities;
 
 namespace Restaurant.Application.Mapper
 {
-    public class MappingProfile : Profile
+    public class ResturantProfile : Profile
     {
-        public MappingProfile()
+        public ResturantProfile()
         {
-            #region Restaurant
             CreateMap<Restaurantt, GetResturantDto>()
                 .ForMember(d => d.Address, opt => opt.MapFrom(src => new Address
                 {
@@ -35,12 +34,7 @@ namespace Restaurant.Application.Mapper
                     City = src.Address.City,
                     PostalCode = src.Address.PostalCode,
                 }));
-            #endregion
 
-            #region Dish
-            CreateMap<Dish, GetDishDto>()
-                    .ForMember(dest => dest.RestaurantName, opt => opt.MapFrom(src => src.Restaurant.Name));
-            #endregion
         }
     }
 }

@@ -5,6 +5,106 @@
     "version": "1.0"
   },
   "paths": {
+    "/api/Dishes/{RestaurantId}": {
+      "post": {
+        "tags": [
+          "Dishes"
+        ],
+        "summary": "Create Dish",
+        "parameters": [
+          {
+            "name": "RestaurantId",
+            "in": "path",
+            "required": true,
+            "schema": {
+              "type": "integer",
+              "format": "int32"
+            }
+          }
+        ],
+        "requestBody": {
+          "content": {
+            "application/json": {
+              "schema": {
+                "$ref": "#/components/schemas/CreateDishCommand"
+              }
+            },
+            "text/json": {
+              "schema": {
+                "$ref": "#/components/schemas/CreateDishCommand"
+              }
+            },
+            "application/*+json": {
+              "schema": {
+                "$ref": "#/components/schemas/CreateDishCommand"
+              }
+            }
+          }
+        },
+        "responses": {
+          "200": {
+            "description": "OK"
+          }
+        }
+      }
+    },
+    "/api/Dishes/{resturantId}/{dishId}": {
+      "delete": {
+        "tags": [
+          "Dishes"
+        ],
+        "summary": "Delete Dish from Restaurant",
+        "parameters": [
+          {
+            "name": "resturantId",
+            "in": "path",
+            "required": true,
+            "schema": {
+              "type": "integer",
+              "format": "int32"
+            }
+          },
+          {
+            "name": "dishId",
+            "in": "path",
+            "required": true,
+            "schema": {
+              "type": "integer",
+              "format": "int32"
+            }
+          }
+        ],
+        "responses": {
+          "200": {
+            "description": "OK"
+          }
+        }
+      }
+    },
+    "/api/Dishes/{dishId}": {
+      "patch": {
+        "tags": [
+          "Dishes"
+        ],
+        "summary": "Restore soft-deleted dish",
+        "parameters": [
+          {
+            "name": "dishId",
+            "in": "path",
+            "required": true,
+            "schema": {
+              "type": "integer",
+              "format": "int32"
+            }
+          }
+        ],
+        "responses": {
+          "200": {
+            "description": "OK"
+          }
+        }
+      }
+    },
     "/api/Restaurant": {
       "get": {
         "tags": [
@@ -304,6 +404,28 @@
         },
         "additionalProperties": false
       },
+      "CreateDishCommand": {
+        "type": "object",
+        "properties": {
+          "name": {
+            "type": "string",
+            "nullable": true
+          },
+          "description": {
+            "type": "string",
+            "nullable": true
+          },
+          "price": {
+            "type": "number",
+            "format": "double"
+          },
+          "restaurantId": {
+            "type": "integer",
+            "format": "int32"
+          }
+        },
+        "additionalProperties": false
+      },
       "CreateResturantCommand": {
         "type": "object",
         "properties": {
@@ -339,6 +461,10 @@
       "GetDishDto": {
         "type": "object",
         "properties": {
+          "id": {
+            "type": "integer",
+            "format": "int32"
+          },
           "name": {
             "type": "string",
             "nullable": true
@@ -346,6 +472,9 @@
           "description": {
             "type": "string",
             "nullable": true
+          },
+          "isDeleted": {
+            "type": "boolean"
           },
           "price": {
             "type": "number",

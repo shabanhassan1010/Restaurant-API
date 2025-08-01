@@ -3,6 +3,7 @@ using MediatR;
 using Microsoft.Extensions.Logging;
 using Restaurant.Application.Dishes.DTOS.Dish;
 using Restaurant.Application.Restaurants.Commands.CreateResturant;
+using Restaurant.Domain.Entities;
 using Restaurant.Domain.IRepository;
 
 namespace Restaurant.Application.Dishes.Commands.CreateDish
@@ -22,17 +23,26 @@ namespace Restaurant.Application.Dishes.Commands.CreateDish
             this.unitOfWork = unitOfWork;
         }
         #endregion
-        public Task<GetDishDto> Handle(CreateDishCommand request, CancellationToken cancellationToken)
+        public async Task<GetDishDto> Handle(CreateDishCommand request, CancellationToken cancellationToken)
         {
             logger.LogInformation("Create New Dish {@Dish} with specifce Resturant {@returant}", request , request.RestaurantId);
 
             // get resturant id
-            var GetResturant = unitOfWork.resturantRepository.GetByIdAsync(request.RestaurantId);
+            var GetResturant = await unitOfWork.resturantRepository.GetByIdAsync(request.RestaurantId);
             if (GetResturant == null)
-                return null;
-            
+            {
+                logger.LogWarning("Restaurant with ID {RestaurantId} not found.", request.RestaurantId);
+                return null!;
+            }
 
-            throw new NotImplementedException();
+            // Mapping CreateDishCommand before creat it 
+            var Mapping = mapper.Map<Dish>(request);
+
+            await unitOfWork.dishRepository.CreateAsync(Mapping);
+            await unitOfWork.SaveAsync();
+
+            var dto = mapper.Map<GetDishDto>(Mapping);
+            return dto;
         }
     }
 }

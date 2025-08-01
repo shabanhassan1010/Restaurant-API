@@ -14,17 +14,34 @@ namespace Restaurant.Infastructure.Data.RepoImplementations
             this.context = context;
         }
         #endregion
-        public async Task<bool> SoftDeleteDishAsync(int id)
+        public async Task SoftDeleteDishAsync(int dishId)
         {
-            // get dish 
-            var dish = await context.Dishes.FindAsync(id);
-            if (dish == null) return false;
+            var dish = await context.Dishes.FindAsync(dishId);
+            if (dish != null)
+            {
+                dish.IsDeleted = true;
+                context.Dishes.Update(dish);
+            }
+        }
+        public async Task RestoreDishAsync(int dishId)
+        {
+            var dish = await context.Dishes.FindAsync(dishId);
+            if (dish != null && dish.IsDeleted)
+            {
+                dish.IsDeleted = false;
+                context.Dishes.Update(dish);
+            }
+        }
+        public async Task<Dish?> GetDishByIdAndRestaurantIdAsync(int dishId, int restaurantId)
+        {
+            return await context.Dishes
+                .Where(d => d.Id == dishId && d.RestaurantId == restaurantId && !d.IsDeleted).FirstOrDefaultAsync();
+        }
 
-            // set it false if exist
-            dish.IsDeleted = true;
-
-            await context.SaveChangesAsync();
-            return true;
+        public async Task<Dish> GetDishWhichIsDeletedAsync(int id)   // get all Dishes which i deleted it using soft delete
+        {
+            return await context.Dishes
+                .IgnoreQueryFilters().FirstOrDefaultAsync(d => d.Id == id);
         }
     }
 }

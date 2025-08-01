@@ -27,6 +27,67 @@
     "Summary": "Delete Restaurant"
   },
   {
+    "ContainingType": "Restaurant.API.Controllers.DishesController",
+    "Method": "RestoreDish",
+    "RelativePath": "api/Dishes/{dishId}",
+    "HttpMethod": "PATCH",
+    "IsController": true,
+    "Order": 0,
+    "Parameters": [
+      {
+        "Name": "dishId",
+        "Type": "System.Int32",
+        "IsRequired": true
+      }
+    ],
+    "ReturnTypes": [],
+    "Summary": "Restore soft-deleted dish"
+  },
+  {
+    "ContainingType": "Restaurant.API.Controllers.DishesController",
+    "Method": "CreateDish",
+    "RelativePath": "api/Dishes/{RestaurantId}",
+    "HttpMethod": "POST",
+    "IsController": true,
+    "Order": 0,
+    "Parameters": [
+      {
+        "Name": "RestaurantId",
+        "Type": "System.Int32",
+        "IsRequired": true
+      },
+      {
+        "Name": "createDishesCommand",
+        "Type": "Restaurant.Application.Dishes.Commands.CreateDish.CreateDishCommand",
+        "IsRequired": true
+      }
+    ],
+    "ReturnTypes": [],
+    "Summary": "Create Dish"
+  },
+  {
+    "ContainingType": "Restaurant.API.Controllers.DishesController",
+    "Method": "DeleteDishFromRestaurant",
+    "RelativePath": "api/Dishes/{resturantId}/{dishId}",
+    "HttpMethod": "DELETE",
+    "IsController": true,
+    "Order": 0,
+    "Parameters": [
+      {
+        "Name": "resturantId",
+        "Type": "System.Int32",
+        "IsRequired": true
+      },
+      {
+        "Name": "dishId",
+        "Type": "System.Int32",
+        "IsRequired": true
+      }
+    ],
+    "ReturnTypes": [],
+    "Summary": "Delete Dish from Restaurant"
+  },
+  {
     "ContainingType": "Restaurant.API.Controllers.RestaurantController",
     "Method": "GetAll",
     "RelativePath": "api/Restaurant",

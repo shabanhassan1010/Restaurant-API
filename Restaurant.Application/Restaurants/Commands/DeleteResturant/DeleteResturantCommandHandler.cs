@@ -5,7 +5,6 @@ using Restaurant.Application.CustomeResponse;
 using Restaurant.Application.Restaurants.DTOS.Restaurant.Read;
 using Restaurant.Domain.IRepository;
 using static System.Runtime.InteropServices.JavaScript.JSType;
-
 namespace Restaurant.Application.Restaurants.Commands.DeleteResturant
 {
     public class DeleteResturantCommandHandler : IRequestHandler<DeleteResturantCommand, ApiResponse<GetResturantDto>>
@@ -37,7 +36,7 @@ namespace Restaurant.Application.Restaurants.Commands.DeleteResturant
                     Data = null
                 };
 
-            await unitOfWork.resturantRepository.DeleteAsync(resturant);
+            await unitOfWork.resturantRepository.SoftDeleteRestaurantAsync(resturant.Id);
             await unitOfWork.SaveAsync();
 
             var dto = mapper.Map<GetResturantDto>(resturant);

@@ -1,10 +1,3 @@
-D:\programing\Projects\Resturant Api Project\RestaurantWebsite\Restaurant.API\obj\Debug\net8.0\Restaurant.API.csproj.AssemblyReference.cache
-D:\programing\Projects\Resturant Api Project\RestaurantWebsite\Restaurant.API\obj\Debug\net8.0\Restaurant.API.GeneratedMSBuildEditorConfig.editorconfig
-D:\programing\Projects\Resturant Api Project\RestaurantWebsite\Restaurant.API\obj\Debug\net8.0\Restaurant.API.AssemblyInfoInputs.cache
-D:\programing\Projects\Resturant Api Project\RestaurantWebsite\Restaurant.API\obj\Debug\net8.0\Restaurant.API.AssemblyInfo.cs
-D:\programing\Projects\Resturant Api Project\RestaurantWebsite\Restaurant.API\obj\Debug\net8.0\Restaurant.API.csproj.CoreCompileInputs.cache
-D:\programing\Projects\Resturant Api Project\RestaurantWebsite\Restaurant.API\obj\Debug\net8.0\Restaurant.API.MvcApplicationPartsAssemblyInfo.cache
-D:\programing\Projects\Resturant Api Project\RestaurantWebsite\Restaurant.API\obj\Debug\net8.0\Restaurant.API.sourcelink.json
 D:\programing\Projects\Resturant Api Project\RestaurantWebsite\Restaurant.API\bin\Debug\net8.0\appsettings.Development.json
 D:\programing\Projects\Resturant Api Project\RestaurantWebsite\Restaurant.API\bin\Debug\net8.0\appsettings.json
 D:\programing\Projects\Resturant Api Project\RestaurantWebsite\Restaurant.API\bin\Debug\net8.0\Restaurant.API.staticwebassets.endpoints.json
@@ -157,6 +150,14 @@ D:\programing\Projects\Resturant Api Project\RestaurantWebsite\Restaurant.API\bi
 D:\programing\Projects\Resturant Api Project\RestaurantWebsite\Restaurant.API\bin\Debug\net8.0\Restaurant.Application.pdb
 D:\programing\Projects\Resturant Api Project\RestaurantWebsite\Restaurant.API\bin\Debug\net8.0\Restaurant.Infastructure.pdb
 D:\programing\Projects\Resturant Api Project\RestaurantWebsite\Restaurant.API\bin\Debug\net8.0\Restaurant.Domain.pdb
+D:\programing\Projects\Resturant Api Project\RestaurantWebsite\Restaurant.API\obj\Debug\net8.0\Restaurant.API.csproj.AssemblyReference.cache
+D:\programing\Projects\Resturant Api Project\RestaurantWebsite\Restaurant.API\obj\Debug\net8.0\Restaurant.API.GeneratedMSBuildEditorConfig.editorconfig
+D:\programing\Projects\Resturant Api Project\RestaurantWebsite\Restaurant.API\obj\Debug\net8.0\Restaurant.API.AssemblyInfoInputs.cache
+D:\programing\Projects\Resturant Api Project\RestaurantWebsite\Restaurant.API\obj\Debug\net8.0\Restaurant.API.AssemblyInfo.cs
+D:\programing\Projects\Resturant Api Project\RestaurantWebsite\Restaurant.API\obj\Debug\net8.0\Restaurant.API.csproj.CoreCompileInputs.cache
+D:\programing\Projects\Resturant Api Project\RestaurantWebsite\Restaurant.API\obj\Debug\net8.0\Restaurant.API.MvcApplicationPartsAssemblyInfo.cs
+D:\programing\Projects\Resturant Api Project\RestaurantWebsite\Restaurant.API\obj\Debug\net8.0\Restaurant.API.MvcApplicationPartsAssemblyInfo.cache
+D:\programing\Projects\Resturant Api Project\RestaurantWebsite\Restaurant.API\obj\Debug\net8.0\Restaurant.API.sourcelink.json
 D:\programing\Projects\Resturant Api Project\RestaurantWebsite\Restaurant.API\obj\Debug\net8.0\scopedcss\bundle\Restaurant.API.styles.css
 D:\programing\Projects\Resturant Api Project\RestaurantWebsite\Restaurant.API\obj\Debug\net8.0\staticwebassets.build.json
 D:\programing\Projects\Resturant Api Project\RestaurantWebsite\Restaurant.API\obj\Debug\net8.0\staticwebassets.build.json.cache

@@ -3,9 +3,9 @@
 
 namespace Restaurant.Application.Dishes.Commands.CreateDish
 {
-    public class CreateDishCommandDtoValidators : AbstractValidator<CreateDishCommand>
-    {
-        public CreateDishCommandDtoValidators()
+    public class CreateDishCommandValidators : AbstractValidator<CreateDishCommand>
+    { 
+        public CreateDishCommandValidators()
         {
             RuleFor(dto => dto.Name)
                     .NotEmpty().WithMessage("Name is required.")
