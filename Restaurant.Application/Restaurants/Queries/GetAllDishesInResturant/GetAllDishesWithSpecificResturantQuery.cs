@@ -5,7 +5,6 @@ namespace Restaurant.Application.Restaurants.Queries.GetAllDishesInResturant
 {
     public class GetAllDishesWithSpecificResturantQuery : IRequest<IEnumerable<GetDishDto>>
     {
-
         public GetAllDishesWithSpecificResturantQuery(int resturantId)
         {
              ResturantId = resturantId;

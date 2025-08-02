@@ -19,7 +19,6 @@
 
   <ItemGroup>
     <Folder Include="Dishes\Commands\UpdateDish\" />
-    <Folder Include="Dishes\Queries\" />
     <Folder Include="Account\DTOS\Account\Update\" />
   </ItemGroup>
 

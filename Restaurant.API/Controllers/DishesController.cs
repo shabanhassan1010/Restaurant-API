@@ -4,6 +4,7 @@ using Restaurant.Application.Dishes.Commands.CreateDish;
 using Restaurant.Application.Dishes.Commands.DeleteDish;
 using Restaurant.Application.Dishes.Commands.RestoreDish;
 using Restaurant.Application.Dishes.DTOS.Dish;
+using Restaurant.Application.Dishes.Queries.GetDishById;
 namespace Restaurant.API.Controllers
 {
     [Route("api/[controller]")]
@@ -15,6 +16,19 @@ namespace Restaurant.API.Controllers
         public DishesController(IMediator mediatR)
         {
             this.mediatR = mediatR;
+        }
+        #endregion
+
+        #region Get Dish Using ID
+        [HttpGet("{id}")]
+        [EndpointSummary("Get Dish Using Id")]
+        public async Task<ActionResult<GetDishDto>> GetDishById([FromRoute] int id)
+        {
+            var res = await mediatR.Send(new GetDishByIdQuery(id));
+            if (res == null)
+                return NotFound();
+
+            return Ok(res);
         }
         #endregion
 

@@ -1,10 +1,7 @@
 ﻿using AutoMapper;
 using MediatR;
 using Microsoft.Extensions.Logging;
-using Restaurant.Application.CustomeResponse;
 using Restaurant.Application.Dishes.DTOS.Dish;
-using Restaurant.Application.Restaurants.Queries.GetAllResturants;
-using Restaurant.Domain.Entities;
 using Restaurant.Domain.IRepository;
 
 namespace Restaurant.Application.Restaurants.Queries.GetAllDishesInResturant

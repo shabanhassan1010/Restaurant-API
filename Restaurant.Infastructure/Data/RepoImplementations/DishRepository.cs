@@ -14,7 +14,7 @@ namespace Restaurant.Infastructure.Data.RepoImplementations
             this.context = context;
         }
         #endregion
-        public async Task SoftDeleteDishAsync(int dishId)
+        public async Task SoftDeleteDishAsync(int dishId)  // Delete dish and after this update it only
         {
             var dish = await context.Dishes.FindAsync(dishId);
             if (dish != null)
@@ -23,7 +23,7 @@ namespace Restaurant.Infastructure.Data.RepoImplementations
                 context.Dishes.Update(dish);
             }
         }
-        public async Task RestoreDishAsync(int dishId)
+        public async Task RestoreDishAsync(int dishId)    // get dish and after this update it only
         {
             var dish = await context.Dishes.FindAsync(dishId);
             if (dish != null && dish.IsDeleted)
@@ -35,13 +35,16 @@ namespace Restaurant.Infastructure.Data.RepoImplementations
         public async Task<Dish?> GetDishByIdAndRestaurantIdAsync(int dishId, int restaurantId)
         {
             return await context.Dishes
-                .Where(d => d.Id == dishId && d.RestaurantId == restaurantId && !d.IsDeleted).FirstOrDefaultAsync();
+                .AsNoTracking()
+                .Where(d => d.Id == dishId && d.RestaurantId == restaurantId && !d.IsDeleted)
+                .FirstOrDefaultAsync();
         }
-
-        public async Task<Dish> GetDishWhichIsDeletedAsync(int id)   // get all Dishes which i deleted it using soft delete
+        public async Task<Dish> GetDishWhichIsDeletedAsync(int id)   // get Dish which i deleted it using soft delete
         {
             return await context.Dishes
-                .IgnoreQueryFilters().FirstOrDefaultAsync(d => d.Id == id);
+                .AsNoTracking()
+                .IgnoreQueryFilters()
+                .FirstOrDefaultAsync(d => d.Id == id);
         }
     }
 }

@@ -5,6 +5,47 @@
     "version": "1.0"
   },
   "paths": {
+    "/api/Dishes/{id}": {
+      "get": {
+        "tags": [
+          "Dishes"
+        ],
+        "summary": "Get Dish Using Id",
+        "parameters": [
+          {
+            "name": "id",
+            "in": "path",
+            "required": true,
+            "schema": {
+              "type": "integer",
+              "format": "int32"
+            }
+          }
+        ],
+        "responses": {
+          "200": {
+            "description": "OK",
+            "content": {
+              "text/plain": {
+                "schema": {
+                  "$ref": "#/components/schemas/GetDishDto"
+                }
+              },
+              "application/json": {
+                "schema": {
+                  "$ref": "#/components/schemas/GetDishDto"
+                }
+              },
+              "text/json": {
+                "schema": {
+                  "$ref": "#/components/schemas/GetDishDto"
+                }
+              }
+            }
+          }
+        }
+      }
+    },
     "/api/Dishes/{RestaurantId}": {
       "post": {
         "tags": [
@@ -610,6 +651,17 @@
         },
         "additionalProperties": false
       }
+    },
+    "securitySchemes": {
+      "BearerAuth": {
+        "type": "http",
+        "scheme": "Bearer"
+      }
     }
-  }
+  },
+  "security": [
+    {
+      "BearerAuth": [ ]
+    }
+  ]
 }
