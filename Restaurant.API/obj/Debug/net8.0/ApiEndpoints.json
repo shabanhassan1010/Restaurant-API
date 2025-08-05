@@ -27,6 +27,23 @@
     "Summary": "Delete Restaurant"
   },
   {
+    "ContainingType": "Restaurant.API.Controllers.AdminController",
+    "Method": "Register",
+    "RelativePath": "api/Admin",
+    "HttpMethod": "POST",
+    "IsController": true,
+    "Order": 0,
+    "Parameters": [
+      {
+        "Name": "dto",
+        "Type": "Restaurant.Application.Admins.Command.AdminAndOwnerCommand",
+        "IsRequired": true
+      }
+    ],
+    "ReturnTypes": [],
+    "Summary": "Register For Admin and Owner"
+  },
+  {
     "ContainingType": "Restaurant.API.Controllers.DishesController",
     "Method": "RestoreDish",
     "RelativePath": "api/Dishes/{dishId}",
@@ -143,6 +160,22 @@
       }
     ],
     "Summary": "Delete Dish from Restaurant"
+  },
+  {
+    "ContainingType": "Restaurant.API.Controllers.IdentityController",
+    "Method": "UpdateUserDetails",
+    "RelativePath": "api/Identity/user",
+    "HttpMethod": "PUT",
+    "IsController": true,
+    "Order": 0,
+    "Parameters": [
+      {
+        "Name": "updateUserDetails",
+        "Type": "Restaurant.Application.Users.Commands.UpdateUser.UpdateUserDetailsCommand",
+        "IsRequired": true
+      }
+    ],
+    "ReturnTypes": []
   },
   {
     "ContainingType": "Restaurant.API.Controllers.RestaurantController",
@@ -277,5 +310,22 @@
       }
     ],
     "Summary": "Get Restaurant By Id"
+  },
+  {
+    "ContainingType": "Restaurant.API.Controllers.UserController",
+    "Method": "Register",
+    "RelativePath": "api/User",
+    "HttpMethod": "POST",
+    "IsController": true,
+    "Order": 0,
+    "Parameters": [
+      {
+        "Name": "dto",
+        "Type": "Restaurant.Application.Users.DTOS.RegisterUserDto",
+        "IsRequired": true
+      }
+    ],
+    "ReturnTypes": [],
+    "Summary": "Register For User"
   }
 ]

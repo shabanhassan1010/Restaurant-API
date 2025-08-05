@@ -7,21 +7,16 @@ using Restaurant.Domain.Entities;
 using Restaurant.Infastructure.Extensions;
 using Serilog;
 #endregion
-
 var builder = WebApplication.CreateBuilder(args);
 
 // Configure Application
 builder.AddPresentation();
 
 // Configure DbContext with SQL Server
-builder.Services.AddInfastructure(builder.Configuration);
+builder.Services.AddInfrastructure(builder.Configuration);
 
 // Service Registeration
 builder.Services.AddApplication();
-
-
-
-
 
 var app = builder.Build();
 
@@ -41,6 +36,8 @@ if (app.Environment.IsDevelopment())
 app.UseHttpsRedirection();
 
 //app.MapGroup("api/Identity").MapIdentityApi<User>();
+
+app.UseAuthentication();
 
 app.UseAuthorization();
 

@@ -1,8 +1,7 @@
 ﻿using FluentValidation;
 using FluentValidation.AspNetCore;
 using Microsoft.Extensions.DependencyInjection;
-using Restaurant.Application.RestaurantService.IService;
-using Restaurant.Application.RestaurantService.Service;
+using Restaurant.Application.Users;
 
 namespace Restaurant.Application.Extensions
 {
@@ -16,6 +15,10 @@ namespace Restaurant.Application.Extensions
 
             services.AddAutoMapper(assembly);
             services.AddValidatorsFromAssembly(assembly).AddFluentValidationAutoValidation();
+
+            services.AddScoped<IUserContext, UserContext>();
+
+            services.AddHttpContextAccessor();  // im use this beacuse i inject it in UserContext
         } 
     }
 }

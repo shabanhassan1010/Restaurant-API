@@ -27,10 +27,7 @@ namespace Restaurant.Infastructure.Data.DBContext
 
             // Apply your own configurations
             modelBuilder.ApplyConfiguration(new ResturantConfiguration());
-            modelBuilder.ApplyConfiguration(new DishConfiguration());
-
-            
-
+            modelBuilder.ApplyConfiguration(new DishConfiguration());      
         }
     }
 }

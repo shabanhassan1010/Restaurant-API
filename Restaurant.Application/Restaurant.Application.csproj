@@ -20,6 +20,8 @@
   <ItemGroup>
     <Folder Include="Dishes\Commands\UpdateDish\" />
     <Folder Include="Account\DTOS\Account\Update\" />
+    <Folder Include="Users\Commands\LoginUser\" />
+    <Folder Include="Users\Queries\" />
   </ItemGroup>
 
 </Project>

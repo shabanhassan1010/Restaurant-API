@@ -8,6 +8,8 @@ namespace Restaurant.API.Extensions
     {
         public static void AddPresentation(this WebApplicationBuilder builder)
         {
+            builder.Services.AddAuthentication();
+
             builder.Services.AddControllers();
             builder.Services.AddEndpointsApiExplorer();
             builder.Services.AddSwaggerGen(c =>

@@ -11,18 +11,18 @@ namespace Restaurant.Infastructure.Extensions
 {
     public static class ServiceCollectionExtensions
     {
-        public static void AddInfastructure(this IServiceCollection services , IConfiguration configuration)
+        public static void AddInfrastructure(this IServiceCollection services , IConfiguration configuration)
         {
             services.AddDbContext<RestaurantDB>(options =>
             {
-                options.UseSqlServer(configuration.GetConnectionString("DefaultConnection"));
+                options.UseSqlServer(configuration.GetConnectionString("DefaultConnection"));  // Database setup
                 options.EnableSensitiveDataLogging();
             });
-            services.AddIdentity<User, IdentityRole>()   
+
+            services.AddIdentity<User, IdentityRole>()     // Identity 
                 .AddEntityFrameworkStores<RestaurantDB>().AddDefaultTokenProviders();
 
-            services.AddScoped<IResturantRepository, ResturantRepository>();
-            services.AddScoped<IUnitOfWork, UnitOfWork>();
+            services.AddScoped<IUnitOfWork, UnitOfWork>(); 
         }
     }
 }
