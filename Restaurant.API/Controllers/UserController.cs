@@ -2,7 +2,6 @@
 using Microsoft.AspNetCore.Authorization;
 using Microsoft.AspNetCore.Components.Forms;
 using Microsoft.AspNetCore.Mvc;
-using Restaurant.Application.Account.DTOS.Account.Read;
 using Restaurant.Application.Users.Commands.LoginUser;
 using Restaurant.Application.Users.Commands.RegisterUser;
 using Restaurant.Application.Users.Commands.UpdateUser;
@@ -25,6 +24,7 @@ namespace Restaurant.API.Controllers
 
         protected string? GetUserId() =>  User.FindFirstValue(ClaimTypes.NameIdentifier);
 
+        #region register
         [HttpPost("register")]
         [EndpointSummary("Register For User")]
         public async Task<IActionResult> Register([FromBody] RegisterUserDto dto)
@@ -37,8 +37,9 @@ namespace Restaurant.API.Controllers
 
             return Ok("User registered successfully.");
         }
+        #endregion
 
-
+        # region login
         [HttpPost("login")]
         [EndpointSummary("Login For User")]
         public async Task<IActionResult> Login([FromBody] LoginUserDto dto)
@@ -51,5 +52,7 @@ namespace Restaurant.API.Controllers
 
             return Ok(result);
         }
+        #endregion
+
     }
 }

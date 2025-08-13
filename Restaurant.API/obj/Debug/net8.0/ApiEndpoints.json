@@ -36,12 +36,29 @@
     "Parameters": [
       {
         "Name": "dto",
-        "Type": "Restaurant.Application.Admins.Command.AdminAndOwnerCommand",
+        "Type": "Restaurant.Application.Admins.Dto.RegisterRoleDto",
         "IsRequired": true
       }
     ],
     "ReturnTypes": [],
     "Summary": "Register For Admin and Owner"
+  },
+  {
+    "ContainingType": "Restaurant.API.Controllers.AdminController",
+    "Method": "Login",
+    "RelativePath": "api/Admin/login",
+    "HttpMethod": "POST",
+    "IsController": true,
+    "Order": 0,
+    "Parameters": [
+      {
+        "Name": "dto",
+        "Type": "Restaurant.Application.Admins.Dto.LoginRoleDto",
+        "IsRequired": true
+      }
+    ],
+    "ReturnTypes": [],
+    "Summary": "Login For Admin and Owner"
   },
   {
     "ContainingType": "Restaurant.API.Controllers.DishesController",
@@ -328,21 +345,5 @@
     ],
     "ReturnTypes": [],
     "Summary": "Register For User"
-  },
-  {
-    "ContainingType": "Restaurant.API.Controllers.UserController",
-    "Method": "UpdateUserDetails",
-    "RelativePath": "api/User/user",
-    "HttpMethod": "PUT",
-    "IsController": true,
-    "Order": 0,
-    "Parameters": [
-      {
-        "Name": "updateUserDetails",
-        "Type": "Restaurant.Application.Users.Commands.UpdateUser.UpdateUserDetailsCommand",
-        "IsRequired": true
-      }
-    ],
-    "ReturnTypes": []
   }
 ]

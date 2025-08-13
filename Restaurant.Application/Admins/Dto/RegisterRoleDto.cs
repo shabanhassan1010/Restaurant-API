@@ -1,15 +1,15 @@
-﻿using Restaurant.Domain.Entities.Roles;
-
-namespace Restaurant.Application.Account.DTOS.Account.Write
+﻿
+namespace Restaurant.Application.Admins.Dto
 {
-    public class RegisterDto
+    public class RegisterRoleDto
     {
         public string FirstName { get; set; }
         public string LastName { get; set; }
+        public string UserName { get; set; }
         public string Email { get; set; }
-        public string PhoneNumber { get; set; }
         public string Password { get; set; }
         public string ConfirmPassword { get; set; }
-        public string? Role { get; set; }
+        public string PhoneNumber { get; set; }
+        public string Role { get; set; }    // Admin or Owner
     }
 }

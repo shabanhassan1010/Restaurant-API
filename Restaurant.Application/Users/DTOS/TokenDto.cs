@@ -1,6 +1,4 @@
-﻿using Restaurant.Domain.Entities.Roles;
-
-namespace Restaurant.Application.Account.DTOS.Account.Read
+﻿namespace Restaurant.Application.Users.DTOS
 {
     public class TokenDto
     {

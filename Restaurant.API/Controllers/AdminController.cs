@@ -1,7 +1,10 @@
 ﻿using MediatR;
 using Microsoft.AspNetCore.Http;
 using Microsoft.AspNetCore.Mvc;
-using Restaurant.Application.Admins.Command;
+using Restaurant.Application.Admins.Command.Login;
+using Restaurant.Application.Admins.Command.Register;
+using Restaurant.Application.Admins.Dto;
+using Restaurant.Application.Users.Commands.LoginUser;
 using Restaurant.Application.Users.Commands.RegisterUser;
 using Restaurant.Application.Users.DTOS;
 using static Microsoft.EntityFrameworkCore.DbLoggerCategory.Database;
@@ -20,15 +23,31 @@ namespace Restaurant.API.Controllers
         }
         #endregion
 
+        #region Register
         [HttpPost]
         [EndpointSummary("Register For Admin and Owner")]
-        public async Task<IActionResult> Register([FromBody] AdminAndOwnerCommand dto)
+        public async Task<IActionResult> Register([FromBody] RegisterRoleDto dto)
         {
-            var result = await _mediator.Send(dto);
+            var command = new RegisterAdminAndOwnerCommand(dto);
+            var result = await _mediator.Send(command);
             if (!result.Succeeded)
                 return BadRequest(result.Errors);
 
-            return Ok("Admin/Owner registered successfully");
+            return Ok("Account registered successfully");
         }
+        #endregion
+
+        #region Login
+        [HttpPost("login")]
+        [EndpointSummary("Login For Admin and Owner")]
+        public async Task<IActionResult> Login([FromBody] LoginRoleDto dto)
+        {
+            var command = new LoginRolesCommand(dto);
+            var result = await _mediator.Send(command);
+            if (result == null)
+                return Unauthorized("Invalid credentials");
+            return Ok(result);
+        }
+        #endregion
     }
 }
