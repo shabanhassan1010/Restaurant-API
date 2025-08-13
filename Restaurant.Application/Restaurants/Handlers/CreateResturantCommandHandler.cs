@@ -1,11 +1,12 @@
 ﻿using AutoMapper;
 using MediatR;
 using Microsoft.Extensions.Logging;
+using Restaurant.Application.Restaurants.Commands.CreateResturant;
 using Restaurant.Application.Restaurants.DTOS.Restaurant.Read;
 using Restaurant.Domain.Entities;
 using Restaurant.Domain.IRepository;
 
-namespace Restaurant.Application.Restaurants.Commands.CreateResturant
+namespace Restaurant.Application.Restaurants.Handlers
 {
     public class CreateResturantCommandHandler : IRequestHandler<CreateResturantCommand, GetResturantDto>
     {

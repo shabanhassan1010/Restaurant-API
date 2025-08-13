@@ -3,9 +3,10 @@ using MediatR;
 using Microsoft.Extensions.Logging;
 using Restaurant.Application.Restaurants.Commands.CreateResturant;
 using Restaurant.Application.Restaurants.DTOS.Restaurant.Read;
+using Restaurant.Application.Restaurants.Queries.GetAllResturants;
 using Restaurant.Domain.IRepository;
 
-namespace Restaurant.Application.Restaurants.Queries.GetAllResturants
+namespace Restaurant.Application.Restaurants.Handlers
 {
     public class GetAllResturantsQueryHandler : IRequestHandler<GetAllResturantsQuery, IEnumerable<GetResturantDto>>
     {

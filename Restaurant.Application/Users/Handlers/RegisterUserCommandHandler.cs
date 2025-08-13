@@ -1,11 +1,12 @@
 ﻿using MediatR;
 using Microsoft.AspNetCore.Identity;
 using Microsoft.Extensions.Logging;
+using Restaurant.Application.Users.Commands.RegisterUser;
 using Restaurant.Domain.Entities;
 using Restaurant.Domain.Entities.Roles;
 using System.Security.Claims;
 
-namespace Restaurant.Application.Users.Commands.RegisterUser
+namespace Restaurant.Application.Users.Handlers
 {
     public class RegisterUserCommandHandler : IRequestHandler<RegisterUserCommand, IdentityResult>
     {

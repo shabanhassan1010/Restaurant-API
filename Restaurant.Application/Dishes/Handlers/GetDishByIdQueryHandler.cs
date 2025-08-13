@@ -3,10 +3,11 @@ using MediatR;
 using Microsoft.Extensions.Logging;
 using Restaurant.Application.CustomeResponse;
 using Restaurant.Application.Dishes.DTOS.Dish;
+using Restaurant.Application.Dishes.Queries.GetDishById;
 using Restaurant.Application.Restaurants.Queries.GetById;
 using Restaurant.Domain.IRepository;
 
-namespace Restaurant.Application.Dishes.Queries.GetDishById
+namespace Restaurant.Application.Dishes.Handlers
 {
     public class GetDishByIdQueryHandler : IRequestHandler<GetDishByIdQuery, ApiResponse<GetDishDto>>
     {

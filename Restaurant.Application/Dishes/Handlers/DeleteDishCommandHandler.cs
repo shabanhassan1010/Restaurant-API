@@ -2,12 +2,13 @@
 using MediatR;
 using Microsoft.Extensions.Logging;
 using Restaurant.Application.CustomeResponse;
+using Restaurant.Application.Dishes.Commands.DeleteDish;
 using Restaurant.Application.Dishes.DTOS.Dish;
 using Restaurant.Application.Restaurants.DTOS.Restaurant.Read;
 using Restaurant.Application.Restaurants.Queries.GetAllDishesInResturant;
 using Restaurant.Domain.IRepository;
 
-namespace Restaurant.Application.Dishes.Commands.DeleteDish
+namespace Restaurant.Application.Dishes.Handlers
 {
     public class DeleteDishCommandHandler : IRequestHandler<DeleteDishFromResturantCommand, ApiResponse<GetDishDto>>
     {

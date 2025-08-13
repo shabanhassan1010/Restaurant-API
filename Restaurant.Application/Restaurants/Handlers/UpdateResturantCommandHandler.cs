@@ -2,10 +2,11 @@
 using MediatR;
 using Microsoft.Extensions.Logging;
 using Restaurant.Application.CustomeResponse;
+using Restaurant.Application.Restaurants.Commands.UpdateResturant;
 using Restaurant.Application.Restaurants.DTOS.Restaurant.Read;
 using Restaurant.Domain.IRepository;
 
-namespace Restaurant.Application.Restaurants.Commands.UpdateResturant
+namespace Restaurant.Application.Restaurants.Handlers
 {
     public class UpdateResturantCommandHandler : IRequestHandler<UpdateResturantCommand, ApiResponse<GetResturantDto>>
     {

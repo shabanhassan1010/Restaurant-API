@@ -2,9 +2,10 @@
 using MediatR;
 using Microsoft.Extensions.Logging;
 using Restaurant.Application.Dishes.DTOS.Dish;
+using Restaurant.Application.Restaurants.Queries.GetAllDishesInResturant;
 using Restaurant.Domain.IRepository;
 
-namespace Restaurant.Application.Restaurants.Queries.GetAllDishesInResturant
+namespace Restaurant.Application.Restaurants.Handlers
 {
     public class GetAllDishesWithSpecificResturantQueryHandler : IRequestHandler<GetAllDishesWithSpecificResturantQuery, IEnumerable<GetDishDto>>
     {

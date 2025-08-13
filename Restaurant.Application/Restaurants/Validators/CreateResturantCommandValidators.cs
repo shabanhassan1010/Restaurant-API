@@ -1,6 +1,7 @@
 ﻿using FluentValidation;
+using Restaurant.Application.Restaurants.Commands.CreateResturant;
 
-namespace Restaurant.Application.Restaurants.Commands.CreateResturant
+namespace Restaurant.Application.Restaurants.Validators
 {
     public class CreateResturantCommandValidators : AbstractValidator<CreateResturantCommand>
     {

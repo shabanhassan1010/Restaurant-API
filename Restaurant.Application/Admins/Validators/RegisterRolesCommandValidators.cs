@@ -1,39 +1,41 @@
 ﻿using FluentValidation;
-namespace Restaurant.Application.Users.Commands.RegisterUser
-{
-    public class RegisterResturantCommandValidators : AbstractValidator<RegisterUserCommand>
-    {
-        public RegisterResturantCommandValidators()
-        {
-            RuleFor(x => x.Dto.FirstName)
-            .NotEmpty()
-            .WithMessage("First name is required")
-            .MaximumLength(50)
-            .MinimumLength(3);
+using Restaurant.Application.Admins.Dto;
 
-            RuleFor(x => x.Dto.LastName)
+namespace Restaurant.Application.Admins.Validators
+{
+    public class RegisterRolesCommandValidators : AbstractValidator<RegisterRoleDto>
+    {
+        public RegisterRolesCommandValidators()
+        {
+            RuleFor(x => x.FirstName)
+                    .NotEmpty()
+                    .WithMessage("First name is required")
+                    .MaximumLength(50)
+                    .MinimumLength(3);
+
+            RuleFor(x => x.LastName)
                 .NotEmpty()
                 .WithMessage("Last name is required")
                 .MaximumLength(50)
                 .MinimumLength(3);
 
-            RuleFor(x => x.Dto.Email)
+            RuleFor(x => x.Email)
                 .NotEmpty()
                 .EmailAddress()
                 .WithMessage("Email is required")
                 .WithMessage("Email is not valid");
 
-            RuleFor(x => x.Dto.Password)
+            RuleFor(x => x.Password)
                 .NotEmpty()
                 .WithMessage("Password is required")
                 .WithMessage("Password must be at least 6 characters")
                 .MinimumLength(6);
 
-            RuleFor(x=>x.Dto.ConfirmPassword)
-                .Equal(x=>x.Dto.Password)
+            RuleFor(x => x.ConfirmPassword)
+                .Equal(x => x.Password)
                 .WithMessage("Passwords do not match");
 
-            RuleFor(x => x.Dto.PhoneNumber)
+            RuleFor(x => x.PhoneNumber)
                 .NotEmpty()
                 .WithMessage("Phone number is required")
                 .Matches(@"^\d{10,15}$")

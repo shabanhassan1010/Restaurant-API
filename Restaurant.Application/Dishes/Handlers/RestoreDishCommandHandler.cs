@@ -2,9 +2,10 @@
 using MediatR;
 using Microsoft.Extensions.Logging;
 using Restaurant.Application.CustomeResponse;
+using Restaurant.Application.Dishes.Commands.RestoreDish;
 using Restaurant.Application.Dishes.DTOS.Dish;
 using Restaurant.Domain.IRepository;
-namespace Restaurant.Application.Dishes.Commands.RestoreDish
+namespace Restaurant.Application.Dishes.Handlers
 {
     public class RestoreDishCommandHandler : IRequestHandler<RestoreDishCommand, ApiResponse<GetDishDto>>
     {

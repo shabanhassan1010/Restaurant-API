@@ -1,29 +1,28 @@
-﻿
-using MediatR;
+﻿using MediatR;
 using Microsoft.AspNetCore.Identity;
 using Microsoft.Extensions.Configuration;
 using Microsoft.Extensions.Logging;
 using Microsoft.IdentityModel.Tokens;
-using Restaurant.Application.Admins.Dto;
+using Restaurant.Application.Users.Commands.LoginUser;
+using Restaurant.Application.Users.DTOS;
 using Restaurant.Domain.Entities;
-using Restaurant.Domain.Entities.Roles;
 using System.IdentityModel.Tokens.Jwt;
 using System.Security.Claims;
 using System.Text;
 
-namespace Restaurant.Application.Admins.Command.Register
+namespace Restaurant.Application.Users.Handlers
 {
-    public class LoginRolesCommandHandler : IRequestHandler<LoginRolesCommand, TokenDto>
+    public class LoginUserCommandHandler : IRequestHandler<LoginUserCommand, TokenDto>
     {
         #region
         private readonly UserManager<User> _userManager;
         private readonly RoleManager<IdentityRole> _roleManager;
-        private readonly ILogger<LoginRolesCommandHandler> _logger;
+        private readonly ILogger<LoginUserCommandHandler> _logger;
         private readonly IConfiguration _config;
 
-        public LoginRolesCommandHandler(UserManager<User> userManager,
+        public LoginUserCommandHandler(UserManager<User> userManager,
             RoleManager<IdentityRole> roleManager,
-            ILogger<LoginRolesCommandHandler> logger,
+            ILogger<LoginUserCommandHandler> logger,
             IConfiguration config)
         {
             _userManager = userManager;
@@ -32,9 +31,9 @@ namespace Restaurant.Application.Admins.Command.Register
             _config = config;
         }
         #endregion
-        public async Task<TokenDto> Handle(LoginRolesCommand request, CancellationToken cancellationToken)
+        public async Task<TokenDto> Handle(LoginUserCommand request, CancellationToken cancellationToken)
         {
-            var user = await _userManager.FindByEmailAsync(request.loginRoleDto.Email);
+            var user = await _userManager.FindByEmailAsync(request.Dto.Email);
             if (user == null)
             {
                 return new TokenDto
@@ -45,7 +44,7 @@ namespace Restaurant.Application.Admins.Command.Register
                 };
             }
 
-            if (!await _userManager.CheckPasswordAsync(user, request.loginRoleDto.Password))
+            if (!await _userManager.CheckPasswordAsync(user, request.Dto.Password))
             {
                 return new TokenDto
                 {
@@ -54,29 +53,18 @@ namespace Restaurant.Application.Admins.Command.Register
                     Success = false
                 };
             }
+            // Ensure user is in "User" role
+            await CheckRoleAddAddAsync(user, "User");
 
-            // check for roles first
-            var roles = await _userManager.GetRolesAsync(user);
-            if (!roles.Any(r => r == Roles.Admin.ToString() || r == Roles.Owner.ToString()))
-            {
-                return new TokenDto
-                {
-                    Token = string.Empty,
-                    Message = "Access denied. Only Admin or Owner can log in.",
-                    Success = false
-                };
-            }
-
-            // After get roles i will add claims for him
             var claimsList = await _userManager.GetClaimsAsync(user);
-            foreach (var role in roles)
+            var roles = await _userManager.GetRolesAsync(user);
+            var role = roles.FirstOrDefault();
+            if (!string.IsNullOrEmpty(role))
             {
                 claimsList.Add(new Claim(ClaimTypes.Role, role));
             }
-
             claimsList.Add(new Claim(ClaimTypes.NameIdentifier, user.Id ?? string.Empty));
 
-            // Generate JWT token
             var token = GenerateJwtToken(user, claimsList);
 
             return new TokenDto
@@ -87,6 +75,7 @@ namespace Restaurant.Application.Admins.Command.Register
                 UserName = user.UserName!
             };
         }
+
         private TokenDto GenerateJwtToken(User user, IList<Claim> claimsList)
         {
             var secretKey = _config["JwtSettings:Key"];
@@ -110,6 +99,21 @@ namespace Restaurant.Application.Admins.Command.Register
             {
                 Token = new JwtSecurityTokenHandler().WriteToken(token),
             };
+        }
+        private async Task<IdentityUser> CheckRoleAddAddAsync(User user, string role)
+        {
+            // Ensure the "User" role exists
+            if (!await _roleManager.RoleExistsAsync(role))
+            {
+                await _roleManager.CreateAsync(new IdentityRole("User"));
+            }
+
+            // Add user to "User" role if not already in it
+            if (!await _userManager.IsInRoleAsync(user, "User"))
+            {
+                await _userManager.AddToRoleAsync(user, "User");
+            }
+            return user;
         }
     }
 }

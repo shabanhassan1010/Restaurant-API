@@ -2,10 +2,11 @@
 using MediatR;
 using Microsoft.Extensions.Logging;
 using Restaurant.Application.Restaurants.DTOS.Restaurant.Read;
+using Restaurant.Application.Restaurants.Queries.GetById;
 using Restaurant.Domain.Exepections;
 using Restaurant.Domain.IRepository;
 
-namespace Restaurant.Application.Restaurants.Queries.GetById
+namespace Restaurant.Application.Restaurants.Handlers
 {
     public class GetByIdQueryHandler : IRequestHandler<GetByIdQuery, GetResturantDto>
     {

@@ -2,7 +2,7 @@
 using Restaurant.Application.Users.DTOS;
 
 
-namespace Restaurant.Application.Users.Commands.LoginUser
+namespace Restaurant.Application.Users.Validators
 {
     public class LoginResturantCommandValidators : AbstractValidator<LoginUserDto>
     {

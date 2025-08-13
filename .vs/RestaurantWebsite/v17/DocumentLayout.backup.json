@@ -3,44 +3,20 @@
   "WorkspaceRootPath": "D:\\programing\\Projects\\Resturant Api Project\\RestaurantWebsite\\",
   "Documents": [
     {
-      "AbsoluteMoniker": "D:0:0:{83911D2B-7A10-4080-9B66-7B279C90C0CA}|Restaurant.Application\\Restaurant.Application.csproj|d:\\programing\\projects\\resturant api project\\restaurantwebsite\\restaurant.application\\users\\dtos\\adminorownerregisterdto.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}",
-      "RelativeMoniker": "D:0:0:{83911D2B-7A10-4080-9B66-7B279C90C0CA}|Restaurant.Application\\Restaurant.Application.csproj|solutionrelative:restaurant.application\\users\\dtos\\adminorownerregisterdto.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}"
+      "AbsoluteMoniker": "D:0:0:{83911D2B-7A10-4080-9B66-7B279C90C0CA}|Restaurant.Application\\Restaurant.Application.csproj|d:\\programing\\projects\\resturant api project\\restaurantwebsite\\restaurant.application\\admins\\handlers\\loginrolescommandhandler.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}",
+      "RelativeMoniker": "D:0:0:{83911D2B-7A10-4080-9B66-7B279C90C0CA}|Restaurant.Application\\Restaurant.Application.csproj|solutionrelative:restaurant.application\\admins\\handlers\\loginrolescommandhandler.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}"
     },
     {
-      "AbsoluteMoniker": "D:0:0:{AAF7E5EB-F1A7-4B2D-AED1-F602E35E0F1C}|Restaurant.API\\Restaurant.API.csproj|d:\\programing\\projects\\resturant api project\\restaurantwebsite\\restaurant.api\\controllers\\usercontroller.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}",
-      "RelativeMoniker": "D:0:0:{AAF7E5EB-F1A7-4B2D-AED1-F602E35E0F1C}|Restaurant.API\\Restaurant.API.csproj|solutionrelative:restaurant.api\\controllers\\usercontroller.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}"
+      "AbsoluteMoniker": "D:0:0:{83911D2B-7A10-4080-9B66-7B279C90C0CA}|Restaurant.Application\\Restaurant.Application.csproj|d:\\programing\\projects\\resturant api project\\restaurantwebsite\\restaurant.application\\restaurants\\validators\\updateresturantcommandvalidators.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}",
+      "RelativeMoniker": "D:0:0:{83911D2B-7A10-4080-9B66-7B279C90C0CA}|Restaurant.Application\\Restaurant.Application.csproj|solutionrelative:restaurant.application\\restaurants\\validators\\updateresturantcommandvalidators.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}"
     },
     {
-      "AbsoluteMoniker": "D:0:0:{83911D2B-7A10-4080-9B66-7B279C90C0CA}|Restaurant.Application\\Restaurant.Application.csproj|d:\\programing\\projects\\resturant api project\\restaurantwebsite\\restaurant.application\\users\\commands\\loginuser\\loginusercommandhandler.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}",
-      "RelativeMoniker": "D:0:0:{83911D2B-7A10-4080-9B66-7B279C90C0CA}|Restaurant.Application\\Restaurant.Application.csproj|solutionrelative:restaurant.application\\users\\commands\\loginuser\\loginusercommandhandler.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}"
+      "AbsoluteMoniker": "D:0:0:{AAF7E5EB-F1A7-4B2D-AED1-F602E35E0F1C}|Restaurant.API\\Restaurant.API.csproj|d:\\programing\\projects\\resturant api project\\restaurantwebsite\\restaurant.api\\controllers\\dishescontroller.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}",
+      "RelativeMoniker": "D:0:0:{AAF7E5EB-F1A7-4B2D-AED1-F602E35E0F1C}|Restaurant.API\\Restaurant.API.csproj|solutionrelative:restaurant.api\\controllers\\dishescontroller.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}"
     },
     {
-      "AbsoluteMoniker": "D:0:0:{83911D2B-7A10-4080-9B66-7B279C90C0CA}|Restaurant.Application\\Restaurant.Application.csproj|d:\\programing\\projects\\resturant api project\\restaurantwebsite\\restaurant.application\\users\\commands\\loginuser\\loginusercommand.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}",
-      "RelativeMoniker": "D:0:0:{83911D2B-7A10-4080-9B66-7B279C90C0CA}|Restaurant.Application\\Restaurant.Application.csproj|solutionrelative:restaurant.application\\users\\commands\\loginuser\\loginusercommand.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}"
-    },
-    {
-      "AbsoluteMoniker": "D:0:0:{83911D2B-7A10-4080-9B66-7B279C90C0CA}|Restaurant.Application\\Restaurant.Application.csproj|d:\\programing\\projects\\resturant api project\\restaurantwebsite\\restaurant.application\\admins\\command\\login\\loginrolescommandhandler.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}",
-      "RelativeMoniker": "D:0:0:{83911D2B-7A10-4080-9B66-7B279C90C0CA}|Restaurant.Application\\Restaurant.Application.csproj|solutionrelative:restaurant.application\\admins\\command\\login\\loginrolescommandhandler.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}"
-    },
-    {
-      "AbsoluteMoniker": "D:0:0:{83911D2B-7A10-4080-9B66-7B279C90C0CA}|Restaurant.Application\\Restaurant.Application.csproj|d:\\programing\\projects\\resturant api project\\restaurantwebsite\\restaurant.application\\admins\\command\\login\\loginrolescommand.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}",
-      "RelativeMoniker": "D:0:0:{83911D2B-7A10-4080-9B66-7B279C90C0CA}|Restaurant.Application\\Restaurant.Application.csproj|solutionrelative:restaurant.application\\admins\\command\\login\\loginrolescommand.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}"
-    },
-    {
-      "AbsoluteMoniker": "D:0:0:{83911D2B-7A10-4080-9B66-7B279C90C0CA}|Restaurant.Application\\Restaurant.Application.csproj|d:\\programing\\projects\\resturant api project\\restaurantwebsite\\restaurant.application\\users\\dtos\\tokendto.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}",
-      "RelativeMoniker": "D:0:0:{83911D2B-7A10-4080-9B66-7B279C90C0CA}|Restaurant.Application\\Restaurant.Application.csproj|solutionrelative:restaurant.application\\users\\dtos\\tokendto.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}"
-    },
-    {
-      "AbsoluteMoniker": "D:0:0:{AAF7E5EB-F1A7-4B2D-AED1-F602E35E0F1C}|Restaurant.API\\Restaurant.API.csproj|d:\\programing\\projects\\resturant api project\\restaurantwebsite\\restaurant.api\\controllers\\admincontroller.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}",
-      "RelativeMoniker": "D:0:0:{AAF7E5EB-F1A7-4B2D-AED1-F602E35E0F1C}|Restaurant.API\\Restaurant.API.csproj|solutionrelative:restaurant.api\\controllers\\admincontroller.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}"
-    },
-    {
-      "AbsoluteMoniker": "D:0:0:{83911D2B-7A10-4080-9B66-7B279C90C0CA}|Restaurant.Application\\Restaurant.Application.csproj|d:\\programing\\projects\\resturant api project\\restaurantwebsite\\restaurant.application\\admins\\command\\register\\registeradminandownercommandhandler.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}",
-      "RelativeMoniker": "D:0:0:{83911D2B-7A10-4080-9B66-7B279C90C0CA}|Restaurant.Application\\Restaurant.Application.csproj|solutionrelative:restaurant.application\\admins\\command\\register\\registeradminandownercommandhandler.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}"
-    },
-    {
-      "AbsoluteMoniker": "D:0:0:{83911D2B-7A10-4080-9B66-7B279C90C0CA}|Restaurant.Application\\Restaurant.Application.csproj|d:\\programing\\projects\\resturant api project\\restaurantwebsite\\restaurant.application\\users\\commands\\loginuser\\loginresturantcommandvalidators.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}",
-      "RelativeMoniker": "D:0:0:{83911D2B-7A10-4080-9B66-7B279C90C0CA}|Restaurant.Application\\Restaurant.Application.csproj|solutionrelative:restaurant.application\\users\\commands\\loginuser\\loginresturantcommandvalidators.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}"
+      "AbsoluteMoniker": "D:0:0:{AAF7E5EB-F1A7-4B2D-AED1-F602E35E0F1C}|Restaurant.API\\Restaurant.API.csproj|d:\\programing\\projects\\resturant api project\\restaurantwebsite\\restaurant.api\\controllers\\restaurantcontroller.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}",
+      "RelativeMoniker": "D:0:0:{AAF7E5EB-F1A7-4B2D-AED1-F602E35E0F1C}|Restaurant.API\\Restaurant.API.csproj|solutionrelative:restaurant.api\\controllers\\restaurantcontroller.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}"
     }
   ],
   "DocumentGroupContainers": [
@@ -50,8 +26,34 @@
       "DocumentGroups": [
         {
           "DockedWidth": 200,
-          "SelectedChildIndex": 12,
+          "SelectedChildIndex": 0,
           "Children": [
+            {
+              "$type": "Document",
+              "DocumentIndex": 0,
+              "Title": "LoginRolesCommandHandler.cs",
+              "DocumentMoniker": "D:\\programing\\Projects\\Resturant Api Project\\RestaurantWebsite\\Restaurant.Application\\Admins\\Handlers\\LoginRolesCommandHandler.cs",
+              "RelativeDocumentMoniker": "Restaurant.Application\\Admins\\Handlers\\LoginRolesCommandHandler.cs",
+              "ToolTip": "D:\\programing\\Projects\\Resturant Api Project\\RestaurantWebsite\\Restaurant.Application\\Admins\\Handlers\\LoginRolesCommandHandler.cs*",
+              "RelativeToolTip": "Restaurant.Application\\Admins\\Handlers\\LoginRolesCommandHandler.cs*",
+              "ViewState": "AgIAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAA==",
+              "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000738|",
+              "WhenOpened": "2025-08-13T20:33:53.946Z",
+              "EditorCaption": ""
+            },
+            {
+              "$type": "Document",
+              "DocumentIndex": 1,
+              "Title": "UpdateResturantCommandValidators.cs",
+              "DocumentMoniker": "D:\\programing\\Projects\\Resturant Api Project\\RestaurantWebsite\\Restaurant.Application\\Restaurants\\Validators\\UpdateResturantCommandValidators.cs",
+              "RelativeDocumentMoniker": "Restaurant.Application\\Restaurants\\Validators\\UpdateResturantCommandValidators.cs",
+              "ToolTip": "D:\\programing\\Projects\\Resturant Api Project\\RestaurantWebsite\\Restaurant.Application\\Restaurants\\Validators\\UpdateResturantCommandValidators.cs*",
+              "RelativeToolTip": "Restaurant.Application\\Restaurants\\Validators\\UpdateResturantCommandValidators.cs*",
+              "ViewState": "AgIAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAA==",
+              "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000738|",
+              "WhenOpened": "2025-08-13T20:30:30.802Z",
+              "EditorCaption": ""
+            },
             {
               "$type": "Bookmark",
               "Name": "ST:0:0:{e1b7d1f8-9b3c-49b1-8f4f-bfc63a88835d}"
@@ -102,133 +104,28 @@
             },
             {
               "$type": "Document",
-              "DocumentIndex": 0,
-              "Title": "AdminOrOwnerRegisterDto.cs",
-              "DocumentMoniker": "D:\\programing\\Projects\\Resturant Api Project\\RestaurantWebsite\\Restaurant.Application\\Users\\DTOS\\AdminOrOwnerRegisterDto.cs",
-              "RelativeDocumentMoniker": "Restaurant.Application\\Users\\DTOS\\AdminOrOwnerRegisterDto.cs",
-              "ToolTip": "D:\\programing\\Projects\\Resturant Api Project\\RestaurantWebsite\\Restaurant.Application\\Users\\DTOS\\AdminOrOwnerRegisterDto.cs",
-              "RelativeToolTip": "Restaurant.Application\\Users\\DTOS\\AdminOrOwnerRegisterDto.cs",
-              "ViewState": "AgIAAAAAAAAAAAAAAAAAAAQAAAA6AAAAAAAAAA==",
-              "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000738|",
-              "WhenOpened": "2025-08-13T18:39:06.491Z",
-              "EditorCaption": ""
-            },
-            {
-              "$type": "Document",
               "DocumentIndex": 2,
-              "Title": "LoginUserCommandHandler.cs",
-              "DocumentMoniker": "D:\\programing\\Projects\\Resturant Api Project\\RestaurantWebsite\\Restaurant.Application\\Users\\Commands\\LoginUser\\LoginUserCommandHandler.cs",
-              "RelativeDocumentMoniker": "Restaurant.Application\\Users\\Commands\\LoginUser\\LoginUserCommandHandler.cs",
-              "ToolTip": "D:\\programing\\Projects\\Resturant Api Project\\RestaurantWebsite\\Restaurant.Application\\Users\\Commands\\LoginUser\\LoginUserCommandHandler.cs*",
-              "RelativeToolTip": "Restaurant.Application\\Users\\Commands\\LoginUser\\LoginUserCommandHandler.cs*",
-              "ViewState": "AgIAAAAAAAAAAAAAAAAAAAUAAAAAAAAAAAAAAA==",
+              "Title": "DishesController.cs",
+              "DocumentMoniker": "D:\\programing\\Projects\\Resturant Api Project\\RestaurantWebsite\\Restaurant.API\\Controllers\\DishesController.cs",
+              "RelativeDocumentMoniker": "Restaurant.API\\Controllers\\DishesController.cs",
+              "ToolTip": "D:\\programing\\Projects\\Resturant Api Project\\RestaurantWebsite\\Restaurant.API\\Controllers\\DishesController.cs",
+              "RelativeToolTip": "Restaurant.API\\Controllers\\DishesController.cs",
+              "ViewState": "AgIAADUAAAAAAAAAAAAgwEEAAAAIAAAAAAAAAA==",
               "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000738|",
-              "WhenOpened": "2025-08-13T18:38:53.3Z",
-              "EditorCaption": ""
-            },
-            {
-              "$type": "Document",
-              "DocumentIndex": 5,
-              "Title": "LoginRolesCommand.cs",
-              "DocumentMoniker": "D:\\programing\\Projects\\Resturant Api Project\\RestaurantWebsite\\Restaurant.Application\\Admins\\Command\\Login\\LoginRolesCommand.cs",
-              "RelativeDocumentMoniker": "Restaurant.Application\\Admins\\Command\\Login\\LoginRolesCommand.cs",
-              "ToolTip": "D:\\programing\\Projects\\Resturant Api Project\\RestaurantWebsite\\Restaurant.Application\\Admins\\Command\\Login\\LoginRolesCommand.cs*",
-              "RelativeToolTip": "Restaurant.Application\\Admins\\Command\\Login\\LoginRolesCommand.cs*",
-              "ViewState": "AgIAAAgAAAAAAAAAAAAAwAIAAAAAAAAAAAAAAA==",
-              "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000738|",
-              "WhenOpened": "2025-08-13T18:38:24.976Z",
-              "EditorCaption": ""
-            },
-            {
-              "$type": "Document",
-              "DocumentIndex": 6,
-              "Title": "TokenDto.cs",
-              "DocumentMoniker": "D:\\programing\\Projects\\Resturant Api Project\\RestaurantWebsite\\Restaurant.Application\\Users\\DTOS\\TokenDto.cs",
-              "RelativeDocumentMoniker": "Restaurant.Application\\Users\\DTOS\\TokenDto.cs",
-              "ToolTip": "D:\\programing\\Projects\\Resturant Api Project\\RestaurantWebsite\\Restaurant.Application\\Users\\DTOS\\TokenDto.cs",
-              "RelativeToolTip": "Restaurant.Application\\Users\\DTOS\\TokenDto.cs",
-              "ViewState": "AgIAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAA==",
-              "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000738|",
-              "WhenOpened": "2025-08-13T18:37:48.403Z",
-              "EditorCaption": ""
-            },
-            {
-              "$type": "Document",
-              "DocumentIndex": 1,
-              "Title": "UserController.cs",
-              "DocumentMoniker": "D:\\programing\\Projects\\Resturant Api Project\\RestaurantWebsite\\Restaurant.API\\Controllers\\UserController.cs",
-              "RelativeDocumentMoniker": "Restaurant.API\\Controllers\\UserController.cs",
-              "ToolTip": "D:\\programing\\Projects\\Resturant Api Project\\RestaurantWebsite\\Restaurant.API\\Controllers\\UserController.cs*",
-              "RelativeToolTip": "Restaurant.API\\Controllers\\UserController.cs*",
-              "ViewState": "AgIAAAYAAAAAAAAAAAAAAAQAAAAAAAAAAAAAAA==",
-              "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000738|",
-              "WhenOpened": "2025-08-13T18:28:35.172Z",
-              "EditorCaption": ""
-            },
-            {
-              "$type": "Document",
-              "DocumentIndex": 4,
-              "Title": "LoginRolesCommandHandler.cs",
-              "DocumentMoniker": "D:\\programing\\Projects\\Resturant Api Project\\RestaurantWebsite\\Restaurant.Application\\Admins\\Command\\Login\\LoginRolesCommandHandler.cs",
-              "RelativeDocumentMoniker": "Restaurant.Application\\Admins\\Command\\Login\\LoginRolesCommandHandler.cs",
-              "ToolTip": "D:\\programing\\Projects\\Resturant Api Project\\RestaurantWebsite\\Restaurant.Application\\Admins\\Command\\Login\\LoginRolesCommandHandler.cs*",
-              "RelativeToolTip": "Restaurant.Application\\Admins\\Command\\Login\\LoginRolesCommandHandler.cs*",
-              "ViewState": "AgIAAAwAAAAAAAAAAAAAAAcAAAAAAAAAAAAAAA==",
-              "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000738|",
-              "WhenOpened": "2025-08-13T18:13:51.321Z",
-              "EditorCaption": ""
-            },
-            {
-              "$type": "Document",
-              "DocumentIndex": 8,
-              "Title": "RegisterAdminAndOwnerCommandHandler.cs",
-              "DocumentMoniker": "D:\\programing\\Projects\\Resturant Api Project\\RestaurantWebsite\\Restaurant.Application\\Admins\\Command\\Register\\RegisterAdminAndOwnerCommandHandler.cs",
-              "RelativeDocumentMoniker": "Restaurant.Application\\Admins\\Command\\Register\\RegisterAdminAndOwnerCommandHandler.cs",
-              "ToolTip": "D:\\programing\\Projects\\Resturant Api Project\\RestaurantWebsite\\Restaurant.Application\\Admins\\Command\\Register\\RegisterAdminAndOwnerCommandHandler.cs",
-              "RelativeToolTip": "Restaurant.Application\\Admins\\Command\\Register\\RegisterAdminAndOwnerCommandHandler.cs",
-              "ViewState": "AgIAAAgAAAAAAAAAAAAxwGoAAAAAAAAAAAAAAA==",
-              "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000738|",
-              "WhenOpened": "2025-08-13T18:06:10.079Z",
+              "WhenOpened": "2025-08-13T18:47:10.159Z",
               "EditorCaption": ""
             },
             {
               "$type": "Document",
               "DocumentIndex": 3,
-              "Title": "LoginUserCommand.cs",
-              "DocumentMoniker": "D:\\programing\\Projects\\Resturant Api Project\\RestaurantWebsite\\Restaurant.Application\\Users\\Commands\\LoginUser\\LoginUserCommand.cs",
-              "RelativeDocumentMoniker": "Restaurant.Application\\Users\\Commands\\LoginUser\\LoginUserCommand.cs",
-              "ToolTip": "D:\\programing\\Projects\\Resturant Api Project\\RestaurantWebsite\\Restaurant.Application\\Users\\Commands\\LoginUser\\LoginUserCommand.cs*",
-              "RelativeToolTip": "Restaurant.Application\\Users\\Commands\\LoginUser\\LoginUserCommand.cs*",
-              "ViewState": "AgIAAAUAAAAAAAAAAAAAwAEAAAAAAAAAAAAAAA==",
+              "Title": "RestaurantController.cs",
+              "DocumentMoniker": "D:\\programing\\Projects\\Resturant Api Project\\RestaurantWebsite\\Restaurant.API\\Controllers\\RestaurantController.cs",
+              "RelativeDocumentMoniker": "Restaurant.API\\Controllers\\RestaurantController.cs",
+              "ToolTip": "D:\\programing\\Projects\\Resturant Api Project\\RestaurantWebsite\\Restaurant.API\\Controllers\\RestaurantController.cs",
+              "RelativeToolTip": "Restaurant.API\\Controllers\\RestaurantController.cs",
+              "ViewState": "AgIAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAA==",
               "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000738|",
-              "WhenOpened": "2025-08-13T17:59:21.534Z",
-              "EditorCaption": ""
-            },
-            {
-              "$type": "Document",
-              "DocumentIndex": 9,
-              "Title": "LoginResturantCommandValidators.cs",
-              "DocumentMoniker": "D:\\programing\\Projects\\Resturant Api Project\\RestaurantWebsite\\Restaurant.Application\\Users\\Commands\\LoginUser\\LoginResturantCommandValidators.cs",
-              "RelativeDocumentMoniker": "Restaurant.Application\\Users\\Commands\\LoginUser\\LoginResturantCommandValidators.cs",
-              "ToolTip": "D:\\programing\\Projects\\Resturant Api Project\\RestaurantWebsite\\Restaurant.Application\\Users\\Commands\\LoginUser\\LoginResturantCommandValidators.cs",
-              "RelativeToolTip": "Restaurant.Application\\Users\\Commands\\LoginUser\\LoginResturantCommandValidators.cs",
-              "ViewState": "AgIAAAAAAAAAAAAAAAAAAA4AAAAwAAAAAAAAAA==",
-              "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000738|",
-              "WhenOpened": "2025-08-13T17:59:31.502Z",
-              "EditorCaption": ""
-            },
-            {
-              "$type": "Document",
-              "DocumentIndex": 7,
-              "Title": "AdminController.cs",
-              "DocumentMoniker": "D:\\programing\\Projects\\Resturant Api Project\\RestaurantWebsite\\Restaurant.API\\Controllers\\AdminController.cs",
-              "RelativeDocumentMoniker": "Restaurant.API\\Controllers\\AdminController.cs",
-              "ToolTip": "D:\\programing\\Projects\\Resturant Api Project\\RestaurantWebsite\\Restaurant.API\\Controllers\\AdminController.cs",
-              "RelativeToolTip": "Restaurant.API\\Controllers\\AdminController.cs",
-              "ViewState": "AgIAAA8AAAAAAAAAAAAUwCYAAAAAAAAAAAAAAA==",
-              "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000738|",
-              "WhenOpened": "2025-08-13T17:42:27.833Z",
-              "EditorCaption": ""
+              "WhenOpened": "2025-08-13T18:47:09.567Z"
             }
           ]
         }

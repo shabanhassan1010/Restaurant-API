@@ -1,7 +1,7 @@
 ﻿using FluentValidation;
 using Restaurant.Application.Admins.Dto;
 
-namespace Restaurant.Application.Admins.Command.Register
+namespace Restaurant.Application.Admins.Validators
 {
     public class LoginRolesCommandValidators : AbstractValidator<LoginRoleDto>
     {

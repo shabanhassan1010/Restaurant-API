@@ -10,7 +10,6 @@ using Restaurant.Application.Restaurants.DTOS.Restaurant.Read;
 using Restaurant.Application.Restaurants.Queries.GetAllDishesInResturant;
 using Restaurant.Application.Restaurants.Queries.GetAllResturants;
 using Restaurant.Application.Restaurants.Queries.GetById;
-using Restaurant.Application.Validators;
 #endregion
 
 namespace Restaurant.API.Controllers

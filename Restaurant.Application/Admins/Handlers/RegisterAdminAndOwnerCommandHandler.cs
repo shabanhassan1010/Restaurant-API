@@ -1,10 +1,11 @@
 ﻿using MediatR;
 using Microsoft.AspNetCore.Identity;
+using Restaurant.Application.Admins.Command.Login;
 using Restaurant.Domain.Entities;
 using Restaurant.Domain.Entities.Roles;
 using System.Data;
 using System.Security.Claims;
-namespace Restaurant.Application.Admins.Command.Login
+namespace Restaurant.Application.Admins.Handlers
 {
     public class RegisterAdminAndOwnerCommandHandler : IRequestHandler<RegisterAdminAndOwnerCommand, IdentityResult>
     {

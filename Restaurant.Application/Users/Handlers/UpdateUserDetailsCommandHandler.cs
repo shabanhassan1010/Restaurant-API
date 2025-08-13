@@ -2,11 +2,12 @@
 using MediatR;
 using Microsoft.AspNetCore.Identity;
 using Microsoft.Extensions.Logging;
+using Restaurant.Application.Users.Commands.UpdateUser;
 using Restaurant.Domain.Entities;
 using Restaurant.Domain.Exepections;
 using Restaurant.Domain.IRepository;
 
-namespace Restaurant.Application.Users.Commands.UpdateUser
+namespace Restaurant.Application.Users.Handlers
 {
     public class UpdateUserDetailsCommandHandler : IRequestHandler<UpdateUserDetailsCommand>
     {

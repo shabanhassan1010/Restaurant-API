@@ -2,12 +2,13 @@
 using MediatR;
 using Microsoft.Extensions.Logging;
 using Restaurant.Application.CustomeResponse;
+using Restaurant.Application.Dishes.Commands.CreateDish;
 using Restaurant.Application.Dishes.DTOS.Dish;
 using Restaurant.Application.Restaurants.Commands.CreateResturant;
 using Restaurant.Domain.Entities;
 using Restaurant.Domain.IRepository;
 
-namespace Restaurant.Application.Dishes.Commands.CreateDish
+namespace Restaurant.Application.Dishes.Handlers
 {
     public class CreateDishCommandHandler : IRequestHandler<CreateDishCommand, ApiResponse<GetDishDto>>
     {

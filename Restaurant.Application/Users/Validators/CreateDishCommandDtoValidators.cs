@@ -1,5 +1,4 @@
-﻿
-namespace Restaurant.Application.Validators.Dish
+﻿namespace Restaurant.Application.Users.Validators
 {
     public class CreateDishCommandDtoValidators
     {

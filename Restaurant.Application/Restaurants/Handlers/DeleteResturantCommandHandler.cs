@@ -2,10 +2,11 @@
 using MediatR;
 using Microsoft.Extensions.Logging;
 using Restaurant.Application.CustomeResponse;
+using Restaurant.Application.Restaurants.Commands.DeleteResturant;
 using Restaurant.Application.Restaurants.DTOS.Restaurant.Read;
 using Restaurant.Domain.IRepository;
 using static System.Runtime.InteropServices.JavaScript.JSType;
-namespace Restaurant.Application.Restaurants.Commands.DeleteResturant
+namespace Restaurant.Application.Restaurants.Handlers
 {
     public class DeleteResturantCommandHandler : IRequestHandler<DeleteResturantCommand, ApiResponse<GetResturantDto>>
     {
