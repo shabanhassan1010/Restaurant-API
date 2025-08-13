@@ -2,12 +2,15 @@
 using Microsoft.OpenApi.Models;
 using Restaurant.API.Extensions;
 using Restaurant.API.Middlewares;
+using Restaurant.Application.EmailSettings;
 using Restaurant.Application.Extensions;
 using Restaurant.Domain.Entities;
 using Restaurant.Infastructure.Extensions;
 using Serilog;
 #endregion
 var builder = WebApplication.CreateBuilder(args);
+
+builder.Services.Configure<EmailSetting>(builder.Configuration.GetSection("EmailSetting"));
 
 // Configure Application
 builder.AddPresentation();

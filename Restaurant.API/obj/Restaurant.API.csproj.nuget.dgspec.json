@@ -153,6 +153,10 @@
               "target": "Package",
               "version": "[11.3.1, )"
             },
+            "MailKit": {
+              "target": "Package",
+              "version": "[4.13.0, )"
+            },
             "MediatR": {
               "target": "Package",
               "version": "[13.0.0, )"
