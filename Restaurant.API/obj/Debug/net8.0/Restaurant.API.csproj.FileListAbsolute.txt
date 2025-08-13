@@ -169,3 +169,9 @@ D:\programing\Projects\Resturant Api Project\RestaurantWebsite\Restaurant.API\ob
 D:\programing\Projects\Resturant Api Project\RestaurantWebsite\Restaurant.API\obj\Debug\net8.0\Restaurant.API.pdb
 D:\programing\Projects\Resturant Api Project\RestaurantWebsite\Restaurant.API\obj\Debug\net8.0\Restaurant.API.genruntimeconfig.cache
 D:\programing\Projects\Resturant Api Project\RestaurantWebsite\Restaurant.API\obj\Debug\net8.0\ref\Restaurant.API.dll
+D:\programing\Projects\Resturant Api Project\RestaurantWebsite\Restaurant.API\obj\Debug\net8.0\rpswa.dswa.cache.json
+D:\programing\Projects\Resturant Api Project\RestaurantWebsite\Restaurant.API\obj\Debug\net8.0\Restaurant.API.MvcApplicationPartsAssemblyInfo.cs
+D:\programing\Projects\Resturant Api Project\RestaurantWebsite\Restaurant.API\obj\Debug\net8.0\rjimswa.dswa.cache.json
+D:\programing\Projects\Resturant Api Project\RestaurantWebsite\Restaurant.API\obj\Debug\net8.0\rjsmrazor.dswa.cache.json
+D:\programing\Projects\Resturant Api Project\RestaurantWebsite\Restaurant.API\obj\Debug\net8.0\rjsmcshtml.dswa.cache.json
+D:\programing\Projects\Resturant Api Project\RestaurantWebsite\Restaurant.API\bin\Debug\net8.0\Microsoft.Identity.Abstractions.dll

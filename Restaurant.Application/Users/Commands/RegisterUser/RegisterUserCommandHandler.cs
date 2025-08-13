@@ -50,6 +50,7 @@ namespace Restaurant.Application.Users.Commands.RegisterUser
                 UserName = dto.Email.Split('@')[0],
                 Email = dto.Email,
                 PhoneNumber = dto.PhoneNumber,
+                EmailConfirmed = true,  // Assuming email confirmation is not required for registration
             };
 
             // Create user account
@@ -78,28 +79,6 @@ namespace Restaurant.Application.Users.Commands.RegisterUser
 
 
         #region Private Helpers
-        //private async Task<IdentityResult> EnsureRoleAndAssignAsync(User user, string role)
-        //{
-        //    if (!Enum.TryParse<Roles>(role, true, out var _))
-        //    {
-        //        return IdentityResult.Failed(new IdentityError
-        //        {
-        //            Code = "InvalidRole",
-        //            Description = $"Role '{role}' is not recognized."
-        //        });
-        //    }
-
-        //    if (!await _roleManager.RoleExistsAsync(role))
-        //    {
-        //        var roleCreateResult = await _roleManager.CreateAsync(new IdentityRole(role));
-        //        if (!roleCreateResult.Succeeded)
-        //        {
-        //            _logger.LogWarning("Failed to create role: {Errors}", string.Join(", ", roleCreateResult.Errors.Select(e => e.Description)));
-        //            return roleCreateResult;
-        //        }
-        //    }
-        //    return await _userManager.AddToRoleAsync(user, role);
-        //}
         private async Task<IdentityResult> AssignUserRole(User user, string role)
         {
             // Validate requested role

@@ -1,9 +1,9 @@
 ﻿using FluentValidation;
 namespace Restaurant.Application.Users.Commands.RegisterUser
 {
-    public class CreateResturantCommandValidators : AbstractValidator<RegisterUserCommand>
+    public class RegisterResturantCommandValidators : AbstractValidator<RegisterUserCommand>
     {
-        public CreateResturantCommandValidators()
+        public RegisterResturantCommandValidators()
         {
             RuleFor(x => x.Dto.FirstName)
             .NotEmpty()

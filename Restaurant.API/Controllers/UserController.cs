@@ -1,7 +1,13 @@
 ﻿using MediatR;
+using Microsoft.AspNetCore.Authorization;
+using Microsoft.AspNetCore.Components.Forms;
 using Microsoft.AspNetCore.Mvc;
+using Restaurant.Application.Account.DTOS.Account.Read;
+using Restaurant.Application.Users.Commands.LoginUser;
 using Restaurant.Application.Users.Commands.RegisterUser;
+using Restaurant.Application.Users.Commands.UpdateUser;
 using Restaurant.Application.Users.DTOS;
+using System.Security.Claims;
 
 namespace Restaurant.API.Controllers
 {
@@ -17,7 +23,9 @@ namespace Restaurant.API.Controllers
         }
         #endregion
 
-        [HttpPost]
+        protected string? GetUserId() =>  User.FindFirstValue(ClaimTypes.NameIdentifier);
+
+        [HttpPost("register")]
         [EndpointSummary("Register For User")]
         public async Task<IActionResult> Register([FromBody] RegisterUserDto dto)
         {
@@ -28,6 +36,20 @@ namespace Restaurant.API.Controllers
                 return BadRequest(result.Errors);
 
             return Ok("User registered successfully.");
+        }
+
+
+        [HttpPost("login")]
+        [EndpointSummary("Login For User")]
+        public async Task<IActionResult> Login([FromBody] LoginUserDto dto)
+        {
+            var command = new LoginUserCommand(dto);
+            var result = await _mediator.Send(command);
+
+            if (result == null)
+                return BadRequest(result);
+
+            return Ok(result);
         }
     }
 }

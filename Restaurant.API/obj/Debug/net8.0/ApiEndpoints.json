@@ -162,22 +162,6 @@
     "Summary": "Delete Dish from Restaurant"
   },
   {
-    "ContainingType": "Restaurant.API.Controllers.IdentityController",
-    "Method": "UpdateUserDetails",
-    "RelativePath": "api/Identity/user",
-    "HttpMethod": "PUT",
-    "IsController": true,
-    "Order": 0,
-    "Parameters": [
-      {
-        "Name": "updateUserDetails",
-        "Type": "Restaurant.Application.Users.Commands.UpdateUser.UpdateUserDetailsCommand",
-        "IsRequired": true
-      }
-    ],
-    "ReturnTypes": []
-  },
-  {
     "ContainingType": "Restaurant.API.Controllers.RestaurantController",
     "Method": "GetAll",
     "RelativePath": "api/Restaurant",
@@ -313,8 +297,25 @@
   },
   {
     "ContainingType": "Restaurant.API.Controllers.UserController",
+    "Method": "Login",
+    "RelativePath": "api/User/login",
+    "HttpMethod": "POST",
+    "IsController": true,
+    "Order": 0,
+    "Parameters": [
+      {
+        "Name": "dto",
+        "Type": "Restaurant.Application.Users.DTOS.LoginUserDto",
+        "IsRequired": true
+      }
+    ],
+    "ReturnTypes": [],
+    "Summary": "Login For User"
+  },
+  {
+    "ContainingType": "Restaurant.API.Controllers.UserController",
     "Method": "Register",
-    "RelativePath": "api/User",
+    "RelativePath": "api/User/register",
     "HttpMethod": "POST",
     "IsController": true,
     "Order": 0,
@@ -327,5 +328,21 @@
     ],
     "ReturnTypes": [],
     "Summary": "Register For User"
+  },
+  {
+    "ContainingType": "Restaurant.API.Controllers.UserController",
+    "Method": "UpdateUserDetails",
+    "RelativePath": "api/User/user",
+    "HttpMethod": "PUT",
+    "IsController": true,
+    "Order": 0,
+    "Parameters": [
+      {
+        "Name": "updateUserDetails",
+        "Type": "Restaurant.Application.Users.Commands.UpdateUser.UpdateUserDetailsCommand",
+        "IsRequired": true
+      }
+    ],
+    "ReturnTypes": []
   }
 ]
